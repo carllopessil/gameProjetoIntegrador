@@ -45,7 +45,7 @@ public class FH {
                         System.out.println("Com um semblante chateado, a raposa some em uma forte ventania momentânea.");
                         System.out.println("Se aproximando do rio, Theo se impressiona com o quanto aparenta ser muito fundo, e consegue observar uma ponte, um tanto distante");
                         System.out.println( "que concede para o outro lado do rio.");
-                        System.out.println("Ao chegar ao meio dá ponte, começa uma forte ventania balançando a ponte");
+                        System.out.println("Ao chegar ao meio dá ponte, começa uma forte ventania balançando a ponte,");
                         System.out.println("quando derrepente, surge a mesma raposa de antes");
                         
                         FHvFOX = 2; //Valor 2 significa interação RUIM com a raposa!
@@ -56,7 +56,6 @@ public class FH {
                     break;
                     }   
                 }
-               
         }
          if (FHesc1.equalsIgnoreCase("norte")|| FHesc1.equalsIgnoreCase("n")) {
            System.out.println("\nSe aproximando do rio, Theo se impressiona com o quanto aparenta ser muito fundo, e consegue observar uma ponte, um tanto distante");
@@ -64,6 +63,10 @@ public class FH {
                 System.out.println("No caminho até a ponte, encontra-se um índio sentado como se tivesse a sua espera...");
                 System.out.println("-Oi Theo, você precisa aprender para se tornar um grande Deus, e para isso, precisa passar pelos desafios a sua frente \n");
                 FH.desafioVetor();
+                System.out.println("Parabéns Theo, você conseguiu, boa sorte na sua jornada daqui pela frente! \n");
+                System.out.println("Theo está atravessando a ponte, quando derremente, um gigante monstro");
+                System.out.println("marítmo quebra a ponte inteira e com tudo isso,");
+                System.out.println("Theo caí na água e tem de encarar o monstro");
          }
     }
        static void desafioVetor() {
@@ -107,19 +110,18 @@ public class FH {
             entrada1 = input.nextDouble();
             System.out.println("Escreva a terceira ordem: ");
             entrada2 = input.nextDouble();
-
-            if (entrada == 1.5 && entrada1 == 2.4 && entrada2 == 3.6) {
-                System.out.println("Parabéns Theo, você conseguiu, boa sorte na sua jornada daqui pela frente! \n");
-                System.out.println("Theo está atravessando a ponte, quando derremente, um gigante monstro");
-                System.out.println("marítmo quebra a ponte inteira e com tudo isso,");
-                System.out.println("Theo caí na água e tem de encarar o monstro");
-                
-            } else {
-                System.out.println("TENTE NOVAMENTE");
+            if (entrada != 1.5 || entrada1 != 2.4 && entrada2 != 3.6) {
+          System.out.println("TENTE NOVAMENTE");
             }
-        } while (entrada != 1.5 || entrada1 != 2.4);      
+        } while (entrada != 1.5 || entrada1 != 2.4 && entrada2 != 3.6);      
+           
+        
                 
 
     }
+    
+      
+                
+            
 }
 
