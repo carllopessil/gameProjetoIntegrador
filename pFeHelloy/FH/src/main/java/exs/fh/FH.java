@@ -293,7 +293,48 @@ public class FH {
             System.out.println("Fim do jogo.");
           }
         }
-                
+
+        static void TexugoFH() {
+          Scanner sc = new Scanner(System.in);
+          Random dado1 = new Random();
+          int confi = 0;
+          int vet[] = new int[20];
+
+          System.out.println("Deseja girar o dado? S/N");
+          char v1 = sc.next().charAt(0);
+
+          switch (v1) {
+            case 's':
+            case 'S':
+              confi = 1;
+              break;
+            case 'n':
+            case 'N':
+              confi = 2;
+              break;
+          }
+
+          int i = 0;
+          // estrutura do dado - salvando em array todos os valores
+          for (int cont = 1; cont == confi;) {
+            vet[i] = dado1.nextInt(6) + 1;
+            System.out.println("> " + vet[i] + " <");
+            i++;
+            System.out.println("S/N");
+            char verif2 = sc.next().charAt(0);
+            if (verif2 == 'S' || verif2 == 's') {
+              cont = 1;
+            } else {
+              cont = 2;
+              System.out.println("TODOS OS VALORES\n");
+              // mostrar todos os valores
+              for (int j = 0; j < i; j++) {
+                System.out.println("| " + vet[j] + " |");
+              }
+              break;
+        }
+    }
+  }       
             
 }
 
