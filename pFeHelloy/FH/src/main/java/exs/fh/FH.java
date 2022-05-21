@@ -1,7 +1,7 @@
 package exs.fh;
 
 import java.util.Scanner;
-
+import java.util.Random;
 public class FH {
 
     public static void main(String[] args) {
@@ -64,9 +64,19 @@ public class FH {
                 System.out.println("-Oi Theo, você precisa aprender para se tornar um grande Deus, e para isso, precisa passar pelos desafios a sua frente \n");
                 FH.desafioVetor();
                 System.out.println("Parabéns Theo, você conseguiu, boa sorte na sua jornada daqui pela frente! \n");
-                System.out.println("Theo está atravessando a ponte, quando derremente, um gigante monstro");
-                System.out.println("marítmo quebra a ponte inteira e com tudo isso,");
-                System.out.println("Theo caí na água e tem de encarar o monstro");
+                System.out.println("Theo está atravessando a ponte");
+                if(FHvFOX == 3){
+                    System.out.println("Um monstro marítmo quebra a ponte inteira e com tudo isso,");
+                    System.out.println("Theo caí na água e tem de encarar o monstro");}
+                if(FHvFOX == 2){
+                    System.out.println("A raposa aparece em frente a ponte com um semblante dessa vez de fúria");
+                    System.out.println("-Para ser digno de se tornar um deus seria bom começar a ter educação!");
+                    System.out.println("A raposa destroi a ponte com suas investidas furiosas");
+                    System.out.println("Theo de baixo d'água avista algo se aproximando");
+                    }
+                
+                System.out.println("Um grande peixe-gato de aparencia contraditória e assustradora, te convida para jogar 21");
+                Namazu21();
          }
     }
        static void desafioVetor() {
@@ -113,14 +123,176 @@ public class FH {
             if (entrada != 1.5 || entrada1 != 2.4 && entrada2 != 3.6) {
           System.out.println("TENTE NOVAMENTE");
             }
-        } while (entrada != 1.5 || entrada1 != 2.4 && entrada2 != 3.6);      
-           
-        
-                
-
+        } while (entrada != 1.5 || entrada1 != 2.4 && entrada2 != 3.6);                  
     }
     
-      
+       public static void rule21() {
+        System.out.println("Regras do jogo");
+        System.out.println("todos os jogadores receberão 3 cartas de As a 10");
+        System.out.println(
+            "Você escolhe uma das suas cartas e coloca sobre a mesa\nTodos os jogadores fazem o mesmo e compram uma carta");
+        System.out
+            .println("O jogador que conseguir fazer chegar exatamente a 21 ganha!\n o jogador que ultrapassar o 21 perde.");
+      }
+
+        public static void proc1() {
+          System.out.println("==========INICIO===========");
+          System.out.println("Vamos jogar 21!");
+        }
+
+        static void Namazu21() {
+          Scanner sc = new Scanner(System.in);
+          Random cart1 = new Random();
+          Random cart2 = new Random();
+          Random cart3 = new Random();
+          Random cart4 = new Random();
+          Random cart5 = new Random();
+          Random cart6 = new Random();
+          Random cartB1 = new Random();
+          Random cartB2 = new Random();
+          int FHverif21 = 0;
+          proc1();
+
+          int verif = 1;
+          int cMesa = 0;
+          int entr1 = 0, entr2 = 0;
+          int contador1 = 1;
+          int win = 0;
+
+          while (verif == 1) {
+            int cartaM1 = cart1.nextInt(10) + 1;
+            int cartaM2 = cart2.nextInt(10) + 1;
+            int cartaM3 = cart3.nextInt(10) + 1;
+            int cartaY1 = cart4.nextInt(10) + 1;
+            int cartaY2 = cart5.nextInt(10) + 1;
+            int cartaY3 = cart6.nextInt(10) + 1;
+
+            System.out.println("Vamos comerçar!\nVocê recebe 3 cartas: ");
+            while (cMesa != 21 && verif == 1) {
+              System.out.println(cartaM1 + ", " + cartaM2 + ", " + cartaM3);
+              System.out.println("Escolha entre suas cartas, qual você colocara na mesa?");
+              int choic = sc.nextInt();
+              //if(choic != cartaM1 || choic != cartaM2 || choic != cartaM3){
+              //}
+              if (choic == cartaM1) {
+                entr1 = cartaM1;
+                cartaM1 = cartB1.nextInt(10) + 1;
+                System.out.println("Sua nova carta é: " + cartaM1);
+              } else if (choic == cartaM2) {
+                entr1 = cartaM2;
+                cartaM2 = cartB1.nextInt(10) + 1;
+                System.out.println("Sua nova carta é: " + cartaM2);
+              } else if (choic == cartaM3) {
+                entr1 = cartaM3;
+                cartaM3 = cartB1.nextInt(10) + 1;
+                System.out.println("Sua nova carta é: " + cartaM3);
+              } else if (choic != cartaM1 || choic != cartaM2 || choic != cartaM3){
+                System.out.println("Você não tem esta carta e sua penalidade por tentar roubar é a morte.");
+                verif = 2;
+                break;
+              }
+
+              cMesa = cMesa + entr1;
+              win = (21 - cMesa);
+              if (cMesa >= 21) {
+                if (cMesa == 21) {
+                  System.out.println("Você venceu!");
+                  System.out.println("\ntotal de rodadas: "+contador1);
+                  verif = 2;
+                  break;
+                }
+                System.out.println("Você perdeu.");
+                System.out.println("\ntotal de rodadas: "+contador1);
+                verif = 2;
+                break;
+              }
+
+              System.out.println("\nContagem com a sua jogada: " + cMesa);
+
+              // config bot
+              System.out.println("Vez do bot...\n");
+              System.out.println("cartas do bot: "+cartaY1+" "+cartaY2+" "+cartaY3);
+              if (contador1 == 1) {
+                if (cartaY1 > cartaY2) {
+                  if (cartaY1 > cartaY3) {
+                    entr2 = cartaY1;
+                    cartaY1 = cartB2.nextInt(10) + 1;
+                    System.out.println("Nova carta do bot: "+cartaY1);
+                  } else {
+                    entr2 = cartaY3;
+                    cartaY3 = cartB2.nextInt(10) + 1;
+                    System.out.println("Nova carta do bot: "+cartaY3);
+                  }
+                } else if (cartaY2 > cartaY3) {
+                  entr2 = cartaY2;
+                  cartaY2 = cartB2.nextInt(10) + 1;
+                  System.out.println("Nova carta do bot: "+cartaY3);
+                }
+              } else {
+                if(cMesa + cartaY1 == 21){
+                  entr2 = cartaY1;
+                }else if(cMesa + cartaY2 == 21){
+                  entr2 = cartaY2;
+                }else if(cMesa + cartaY3 == 21){
+                  entr2 = cartaY3;
+                }else{
+                  if(cartaY1 < cartaY2){
+                    if(cartaY1 < cartaY3){
+                      entr2 = cartaY1;
+                    }else{
+                    }
+                  }
+                }        
+              }
+              System.out.println("O bot jogou a carta: " + entr2);
+
+              contador1++;
+
+
+              cMesa = cMesa + entr2;
+              win = (21 - cMesa);
+
+              System.out.println("\ncontagem com a jogada do bot: " + cMesa);
+              if (cMesa >= 21) {
+                if (cMesa == 21) {
+                  System.out.println("Bot wins!");
+                  System.out.println("total de rodadas: "+contador1);
+                  verif = 2;
+                  break;
+                }
+                System.out.println("Bot perdeu.");
+                System.out.println("total de rodadas: "+contador1);
+                verif = 2;
+                break;
+              }
+
+              if (cMesa >= 21) {
+                break;
+              }
+              // fim config bot
+
+              System.out.println("deseja continuar jogando? S/N");
+              char val = sc.next().charAt(0);
+              switch (val) {
+                case 'S':
+                  verif = 1;
+                  break;
+                case 's':
+                  verif = 1;
+                  break;
+                case 'N':
+                  verif = 2;
+                  break;
+                case 'n':
+                  verif = 2;
+                  break;
+                default:
+                verif = 2;
+              }
+            }
+            System.out.println("Fim do jogo.");
+          }
+        }
                 
             
 }
