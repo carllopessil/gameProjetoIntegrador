@@ -46,8 +46,6 @@ public class FH {
                         System.out.println("Se aproximando do rio, Theo se impressiona com o quanto aparenta ser muito fundo, e consegue observar uma ponte, um tanto distante");
                         System.out.println( "que concede para o outro lado do rio.");
                         System.out.println("Ao chegar ao meio dá ponte, começa uma forte ventania balançando a ponte,");
-                        System.out.println("quando derrepente, surge a mesma raposa de antes");
-                        
                         FHvFOX = 2; //Valor 2 significa interação RUIM com a raposa!
                         FHi = 1;
                         break;
@@ -65,6 +63,7 @@ public class FH {
                 FH.desafioVetor();
                 System.out.println("Parabéns Theo, você conseguiu, boa sorte na sua jornada daqui pela frente! \n");
                 System.out.println("Theo está atravessando a ponte");
+                
                 if(FHvFOX == 3){
                     System.out.println("Um monstro marítmo quebra a ponte inteira e com tudo isso,");
                     System.out.println("Theo caí na água e tem de encarar o monstro");}
@@ -76,10 +75,11 @@ public class FH {
                     }
                 
                 System.out.println("Um grande peixe-gato de aparencia contraditória e assustradora, te convida para jogar 21");
+                rule21();
                 Namazu21();
          }
     }
-       static void desafioVetor() {
+       public static void desafioVetor() {
         Scanner input = new Scanner(System.in);
         
         System.out.println("Para passar, só é preciso interligar cada problema com a sua consequência");
@@ -128,7 +128,7 @@ public class FH {
     
        public static void rule21() {
         System.out.println("Regras do jogo");
-        System.out.println("todos os jogadores receberão 3 cartas de As a 10");
+        System.out.println("todos os jogadores receberão 3 cartas de 1 a 10");
         System.out.println(
             "Você escolhe uma das suas cartas e coloca sobre a mesa\nTodos os jogadores fazem o mesmo e compram uma carta");
         System.out
@@ -136,9 +136,10 @@ public class FH {
       }
 
         public static void proc1() {
-          System.out.println("==========INICIO===========");
+          System.out.println("\n ==========INICIO=========== \n");
+          
           System.out.println("Vamos jogar 21!");
-        }
+  }
 
         static void Namazu21() {
           Scanner sc = new Scanner(System.in);
@@ -263,6 +264,7 @@ public class FH {
                 System.out.println("Bot perdeu.");
                 System.out.println("total de rodadas: "+contador1);
                 verif = 2;
+                
                 break;
               }
 
