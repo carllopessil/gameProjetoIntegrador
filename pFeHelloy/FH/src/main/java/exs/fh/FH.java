@@ -87,6 +87,15 @@ public class FH {
 
       System.out.println("Um grande peixe-gato de aparencia contraditória e assustradora, te convida para jogar 21");
       Namazu21();
+      System.out.println("O MONSTRO ENTREGA UM ALJAVA DE ÁGUA");
+      System.out.println("Theo segue em frente nadando até o outro lado do mar");
+        System.out.println("Quando repentinamente avista um Texugo, listrado, na cor ");
+        System.out.println("marrom e branco, carismático e bem bricalhão.");
+        System.out.println("- Olá Theo, espero que você esteja bem");
+        System.out.println("Theo observa que ele tem um copo com dados dentro...");
+        TexugoFH();
+      
+      
     }
   }
 
@@ -224,6 +233,8 @@ public class FH {
                 if (cMesa == 21) {
                   System.out.println("Você venceu!");
                   System.out.println("\ntotal de rodadas: " + contador1);
+                 
+                    
                   lose = 0;
                   verif = 2;
                   FHverif = 2;
