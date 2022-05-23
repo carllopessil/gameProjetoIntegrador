@@ -10,7 +10,7 @@ public class FH {
     
     int FHvFOX = 0;
     int FHcontinua = 0;
-    System.out.println("Meu filho, Agora a próxima etápa da sua jornada será relacionada a natureza!");
+    System.out.println("Meu filho, agora a próxima etapa da sua jornada será relacionada a natureza!");
     System.out.println("...");
     System.out.println("Largado por sua mãe em uma grande floresta, vívida, com belos sons\n"
         + "de pássaros, arvores de vários tipos, galhos, arbustos, flores, e o aroma da\n"
@@ -73,7 +73,7 @@ public class FH {
       System.out.println(
           "-Oi Theo, você precisa aprender para se tornar um grande Deus, e para isso, precisa passar pelos desafios a sua frente \n");
       FH.desafioVetor();
-      System.out.println("- Parabéns Theo, você conseguiu, boa sorte na sua jornada daqui pela frente! \n");
+      System.out.println("-Parabéns Theo, você conseguiu, boa sorte na sua jornada daqui pela frente! \n");
       System.out.println("Theo está atravessando a ponte");
       if (FHvFOX == 3) {
         System.out.println("Um monstro marítmo quebra a ponte inteira e com tudo isso,");
@@ -89,15 +89,11 @@ public class FH {
       System.out.println("Um grande peixe-gato de aparencia contraditória e assustradora, te convida para jogar 21");
       Namazu21();
       
-      System.out.println("Theo segue em frente nadando até o outro lado do mar.");
-        System.out.println("Quando repentinamente avista um Texugo, listrado, na cor marrom ");
-        System.out.println("e branco, carismático e bem bricalhão.");
-        System.out.println("- Olá Theo, espero que você esteja bem!");
-        System.out.println("Theo observa que ele tem um copo com dados dentro...");
-        TexugoFH();
-        System.out.println("- Parabéns Theo, você conseguiu, agora siga a diante para o fim da floresta");
+      System.out.println("-Muito bem Theo");
+        System.out.println("O monstro segura Theo, e o leva até a parte rasa do mar");
+        System.out.println("- Agora siga em diante");
         System.out.println("Ártemis, sua mãe, aparece inesperadamente.");
-        System.out.println("- Querido filho, seu treinamento acabou e você conseguiu");
+        System.out.println("-Querido filho, seu treinamento acabou e você conseguiu");
         System.out.println("obter os conhecimentos necessários, você está pronto para o desafio final");
         
        
@@ -107,31 +103,31 @@ public class FH {
   static void desafioVetor() {
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Para passar, só é preciso interligar cada problema com a sua consequência");
+    System.out.println("Para passar, só é preciso interligar cada exemplo com a sua definição");
     System.out.println(" NA MESMA ORDEM DESCRITA ");
     System.out.println("");
-      System.out.println("DE ACORDO COM O SEU NÚMERO");
+      System.out.println("---DE ACORDO COM O SEU NÚMERO---");
     
     {
-      String[] problemas = new String[7];
-      problemas[0] = " ";
-      problemas[1] = "Água";
-      problemas[2] = "Luz";
-      problemas[3] = "Algas";
-      problemas[4] = "Agente físico que permite que os       |\n|  objetos sejam visíveis";
-      problemas[5] = "Uma substância essencial para todos    | \n|  os seres vivos do planeta ";
-      problemas[6] = "São responsáveis pela produção de      |\n|  54% do oxigênio do mundo";
+      String[] definição = new String[7];
+      definição[0] = " ";
+      definição[1] = "Água";
+      definição[2] = "Luz";
+      definição[3] = "Algas";
+      definição[4] = "Agente físico que permite que os       |\n|  objetos sejam visíveis";
+      definição[5] = "Uma substância essencial para todos    | \n|  os seres vivos do planeta ";
+      definição[6] = "São responsáveis pela produção de      |\n|  54% do oxigênio do mundo";
 
       System.out.println(" _________________________________________________________\n"
           + "()________________________________________________________)");
-      System.out.println("|    COMPLETE O PROBLEMA COM A SUA DEVIDA CONSEQUÊNCIA   |\n| \t \t \t \t \t \t \t  |");
-      for (int i = 1; i < problemas.length - 3; i++) {
+      System.out.println("|    COMPLETE O EXEMPLO COM A SUA DEFINIÇÃO:         |\n| \t \t \t \t \t \t \t  |");
+      for (int i = 1; i < definição.length - 3; i++) {
         System.out
-            .println("|  PROBLEMA " + i + ": " + problemas[i] + "\t \t \t \t \t  |\n|    \t \t \t \t \t \t \t  | ");
+            .println("|  EXEMPLO " + i + ": " + definição[i] + "\t \t \t \t \t  |\n|    \t \t \t \t \t \t \t  | ");
       }
       System.out.println("|_________________________________________________________| \n| \t \t \t \t \t \t \t  |");
-      for (int i = 4; i < problemas.length; i++) {
-        System.out.println("|  CONSEQUENCIA " + i + ": " + problemas[i] + "\t \t \t \t  |\n| \t \t \t \t \t \t \t  |");
+      for (int i = 4; i < definição.length; i++) {
+        System.out.println("|  DEFINIÇÃO " + i + ": " + definição[i] + "\t \t \t \t  |\n| \t \t \t \t \t \t \t  |");
       }
       System.out.println("|_________________________________________________________| \n"
           + "()________________________________________________________)");
@@ -141,11 +137,11 @@ public class FH {
     double entrada, entrada1, entrada2;
 
     do {
-      System.out.println("Escreva qual é o número que atribui a consequência do problema 1: ");
+      System.out.println("Qual é o número que atribui a definição do exemplo 1: ");
       entrada = input.nextDouble();
-      System.out.println("Escreva qual é o número que atribui a consequência do problema 2: ");
+      System.out.println("Qual é o número que atribui a definição do exemplo 2: ");
       entrada1 = input.nextDouble();
-      System.out.println("Escreva qual é o número que atribui a consequência do problema 3: ");
+      System.out.println("Qual é o número que atribui a definiçõ do exemplo 3: ");
       entrada2 = input.nextDouble();
       if (entrada != 5 || entrada1 != 4 && entrada2 != 6) {
         System.out.println("TENTE NOVAMENTE");
@@ -155,7 +151,7 @@ public class FH {
 
   public static void rule21() {
     System.out.println("Regras do jogo");
-    System.out.println("todos os jogadores receberão 3 cartas de As a 10");
+    System.out.println("todos os jogadores receberão 3 cartas de 1 a 10");
     System.out.println(
         "Você escolhe uma das suas cartas e coloca sobre a mesa\nTodos os jogadores fazem o mesmo e compram uma carta");
     System.out
@@ -260,7 +256,7 @@ public class FH {
               System.out.println("\nContagem com a sua jogada: " + cMesa);
 
               // config bot
-              System.out.println("Vez do bot...\n");
+              System.out.println("Vez do monstro ...\n");
               //System.out.println("cartas do bot: " + cartaY1 + " " + cartaY2 + " " + cartaY3);
               if (contador1 == 1) {
                 if (cartaY1 >= cartaY2) {
@@ -326,24 +322,24 @@ public class FH {
                 }
               }
 
-              System.out.println("O bot jogou a carta: " + entr2);
+              System.out.println("O monstro jogou a carta: " + entr2);
 
               contador1++;
 
               cMesa = cMesa + entr2;
               win = (21 - cMesa);
 
-              System.out.println("\ncontagem com a jogada do bot: " + cMesa);
+              System.out.println("\ncontagem com a jogada do monstro: " + cMesa);
               if (cMesa >= 21) {
                 if (cMesa == 21) {
-                  System.out.println("Bot wins!");
+                  System.out.println("Monstro wins!");
                   System.out.println("total de rodadas: " + contador1);
                   verif = 2;
                   lose = 1;
                   FHverif = 2;
                   break;
                 }
-                System.out.println("Bot perdeu.");
+                System.out.println("Monstro perdeu.");
                 System.out.println("total de rodadas: " + contador1);
                 
                 verif = 2;
