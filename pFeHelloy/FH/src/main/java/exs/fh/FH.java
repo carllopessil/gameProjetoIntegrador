@@ -7,6 +7,7 @@ public class FH {
 
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
+    Namazu21();
     int FHvFOX = 0;
     int FHcontinua = 0;
     System.out.println("Meu filho, Agora a próxima etápa da sua jornada será relacionada a natureza!");
@@ -184,10 +185,11 @@ public class FH {
           FHverif = 0;
           int cMesa = 0;
           int contador1 = 1;
+
           while (verif == 1) {
+
             if(lose == 1){
               for(int o = 0; o < 20; o++){
-                lose = 0;
                System.out.println(" ");
               }
               System.out.println("Reiniciando...");
@@ -201,6 +203,9 @@ public class FH {
             int cartaY3 = cart6.nextInt(10) + 1;
         
             while (cMesa != 21 && verif == 1 && FHverif == 0) {
+              if(lose > 0){
+                cMesa = 0;
+                lose = 0;}
               System.out.println("Vamos comerçar!\nVocê recebe 3 cartas: ");
               System.out.println(cartaM1 + ", " + cartaM2 + ", " + cartaM3);
               System.out.println("Escolha entre suas cartas, qual você colocara na mesa?");
@@ -223,7 +228,7 @@ public class FH {
                 System.out.println("Você não tem esta carta e sua penalidade por tentar roubar é a morte.");
                 lose = 1;
                 verif = 0;
-                FHverif = 1;
+               FHverif = 1;
                 break;
               }
 
@@ -233,8 +238,7 @@ public class FH {
                 if (cMesa == 21) {
                   System.out.println("Você venceu!");
                   System.out.println("\ntotal de rodadas: " + contador1);
-                 
-                    
+                   
                   lose = 0;
                   verif = 2;
                   FHverif = 2;
@@ -243,8 +247,8 @@ public class FH {
                 System.out.println("Você perdeu.");
                 System.out.println("\ntotal de rodadas: " + contador1);
                 lose = 1;
-                verif = 0;
-                FHverif = 0;
+               // verif = 0;
+               // FHverif = 0;
                 break;
               }
 
@@ -252,22 +256,30 @@ public class FH {
 
               // config bot
               System.out.println("Vez do bot...\n");
-              System.out.println("cartas do bot: " + cartaY1 + " " + cartaY2 + " " + cartaY3);
+              //System.out.println("cartas do bot: " + cartaY1 + " " + cartaY2 + " " + cartaY3);
               if (contador1 == 1) {
-                if (cartaY1 > cartaY2) {
+                if (cartaY1 >= cartaY2) {
+                  if(cartaY1 == cartaY2){
+                    entr2 = cartaY1;
+                    cartaY1 = cartB2.nextInt(10) + 1;
+                  }
                   if (cartaY1 > cartaY3) {
                     entr2 = cartaY1;
                     cartaY1 = cartB2.nextInt(10) + 1;
-                    System.out.println("Nova carta do bot: " + cartaY1);
+                   // System.out.println("Nova carta do bot: " + cartaY1);
                   } else {
                     entr2 = cartaY3;
                     cartaY3 = cartB2.nextInt(10) + 1;
-                    System.out.println("Nova carta do bot: " + cartaY3);
+                  //  System.out.println("Nova carta do bot: " + cartaY3);
                   }
-                } else if (cartaY2 > cartaY3) {
+                } else if (cartaY2 >= cartaY3) {
+                  if(cartaY2 == cartaY3){
+                    entr2 = cartaY2;
+                    cartaY2 = cartB2.nextInt(10) + 1;
+                  }
                   entr2 = cartaY2;
                   cartaY2 = cartB2.nextInt(10) + 1;
-                  System.out.println("Nova carta do bot: " + cartaY2);
+                //  System.out.println("Nova carta do bot: " + cartaY2);
                 }
               } else {
 
@@ -281,20 +293,24 @@ public class FH {
                   entr2 = cartaY3;
                 //  System.out.println("Nova carta do bot:" + cartaY3);
                 } else {
-                  if (cartaY1 < cartaY2) {
-                    if (cartaY1 < cartaY3) {
+                  if (cartaY1 <= cartaY2) {
+                    if(cartaY1 == cartaY2){
+                      entr2 = cartaY2;
+                      cartaY2 = cartB2.nextInt(10)+1;
+                    }
+                    if (cartaY1 <= cartaY3) {
                       entr2 = cartaY1;
                       cartaY1 = cartB2.nextInt(10) + 1;
                      // System.out.println("Nova carta do bot: " + cartaY1);
 
-                    } else if (cartaY2 < cartaY1) {
-                      if (cartaY2 < cartaY3) {
+                    } else if (cartaY2 <= cartaY1) {
+                      if (cartaY2 <= cartaY3) {
                         entr2 = cartaY2;
                         cartaY2 = cartB2.nextInt(10) + 1;
                         //System.out.println("Nova carta do bot: " + cartaY2);
                       }
-                    } else if (cartaY3 < cartaY1) {
-                      if (cartaY3 < cartaY2) {
+                    } else if (cartaY3 <= cartaY1) {
+                      if (cartaY3 <= cartaY2) {
                         entr2 = cartaY3;
                         cartaY3 = cartB2.nextInt(10) + 1;
                        // System.out.println("Nova carta do bot: " + cartaY3);
@@ -317,8 +333,9 @@ public class FH {
                 if (cMesa == 21) {
                   System.out.println("Bot wins!");
                   System.out.println("total de rodadas: " + contador1);
-                  // verif = 2;
-                  FHverif = 0;
+                  verif = 2;
+                  lose = 1;
+                  FHverif = 2;
                   break;
                 }
                 System.out.println("Bot perdeu.");
@@ -334,11 +351,6 @@ public class FH {
               // fim config bot
               if (verif == 2) {
                 break;
-              } else {
-                verif = 1;
-              }
-              if(lose == 1){
-
               }
             }  
             System.out.println("Fim do jogo.");  
