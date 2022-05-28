@@ -8,13 +8,13 @@ public class Jogo {
 
     public static void main(String[] args) throws InterruptedException {
         menu();
-        
-        //FALTA COMPLETAR MENU (RESUMO E SAIR)
+
+        // FALTA COMPLETAR MENU (RESUMO E SAIR)
         // ARRUMAR HISTORIA DA PARTE DO CARLOS E GU
         // ARRUMAR FINAL
         // COLOCAR PARTE DA LETRA GRANDE NO COMEÇO
-        //FELIPE CONFIRMAR SE A PARTE DO JOGO ESTÁ RODANDO
-        //JOÃO RODAR TODO O JOGO E REVISAR A HISTORIA
+        // FELIPE CONFIRMAR SE A PARTE DO JOGO ESTÁ RODANDO
+        // JOÃO RODAR TODO O JOGO E REVISAR A HISTORIA
 
     }
 
@@ -37,23 +37,21 @@ public class Jogo {
             timer.cancel();
             menu();
         }
-        if (entrada == 2){
+        if (entrada == 2) {
             int enter;
-        System.out.println("---RESUMO---");
+            System.out.println("---RESUMO---");
             do {
-            
-            System.out.println("DIGITE 1 PARA VOLTAR AO MENU");
-            enter = input.nextInt();
-            if (enter == 1) {
-                menu();
+
+                System.out.println("DIGITE 1 PARA VOLTAR AO MENU");
+                enter = input.nextInt();
+                if (enter == 1) {
+                    menu();
                 }
-            }while(enter!=1);
-                    
+            } while (enter != 1);
+
         }
-                
-    }            
-            
-        
+
+    }
 
     static int ataqueTheo() {
         Scanner leitor = new Scanner(System.in);
@@ -137,7 +135,8 @@ public class Jogo {
                     case 2:
                         System.out.println(" MINOTAURO USA INVESTIDA");
                         hpTheo -= 5;
-                        System.out.println("Você sente o impacto da critura, fazendo com que tu perca momentaneamente os seus sentidos...\n ");
+                        System.out.println(
+                                "Você sente o impacto da critura, fazendo com que tu perca momentaneamente os seus sentidos...\n ");
                         break;
                     case 3:
                         System.out.println(" MINOTAURO USA SEUS CHIFRES");
@@ -293,18 +292,21 @@ public class Jogo {
                 + "se apaixona e acaba tendo um filho chamado Theo.\n"
                 + "Isso causa uma grande revolta em Zeusa que acaba mandando o Ares para\nenfrentar os Titãs.\n");
         Thread.sleep(3000);
-        System.out.println("Onde Theo acaba perdendo seu pai na guerra contra os Titãs, com tudo,\n acaba deixando os Deuses"
-                + " do Olimpo furiosos com Zeus, para que Zeus\n não levasse toda a culpa, ele acaba tendo uma solução.");
+        System.out.println(
+                "Onde Theo acaba perdendo seu pai na guerra contra os Titãs, com tudo,\n acaba deixando os Deuses"
+                        + " do Olimpo furiosos com Zeus, para que Zeus\n não levasse toda a culpa, ele acaba tendo uma solução.");
         System.out.println("Onde ele resolve colocar Theo para assumir o lugar de seu pai.\n");
         Thread.sleep(3000);
 
-        System.out.println("Só que Theo ainda era criança e precisava de treinamento para \nassumir esse grande posto,então Zeus "
-                + "resolve que Ártemis que deverá ");
+        System.out.println(
+                "Só que Theo ainda era criança e precisava de treinamento para \nassumir esse grande posto,então Zeus "
+                        + "resolve que Ártemis que deverá ");
         System.out.println("cuidar de Theo e dar todos os ensinamentos necessários.\n");
         Thread.sleep(3000);
         System.out.println("Só que a Ártemis não daria conta de dar todos os ensinamentos para Theo.");
-        System.out.println("Athena vendo toda aquela situação ela resolve ajudar, dando ensinamentos\n sobre estratégias e alguns "
-                + "ensinamentos sobre Guerra.\n");
+        System.out.println(
+                "Athena vendo toda aquela situação ela resolve ajudar, dando ensinamentos\n sobre estratégias e alguns "
+                        + "ensinamentos sobre Guerra.\n");
         Thread.sleep(3000);
         CarloseGu();
         System.out.println("Theo acaba passando pelo treinamento de Athena obtendo sabedoria e conhecimento\n"
@@ -336,20 +338,22 @@ public class Jogo {
         Timer timer = new Timer();
         Scanner input = new Scanner(System.in);
         int grade;
-// contextualização
+        // contextualização
         System.out.println("Atena, no intuito de preparar Theo, e trazer o conhecimento e sabedoria da \nguerra, "
                 + "ela o leva para uma experiência de guerra, onde ele iria conhecer a\n verdade sobre as guerras,"
                 + "diferente da visão que seu pai tinha\n");
         Thread.sleep(3000);
-//história
+        // história
 
-        System.out.println("Iniciando em um corredor totalmente escuro, com ruídos de armas recarregando, \ne fuzis disparando, como se fossem"
-                + "disparos de testes e avisos\n");
+        System.out.println(
+                "Iniciando em um corredor totalmente escuro, com ruídos de armas recarregando, \ne fuzis disparando, como se fossem"
+                        + "disparos de testes e avisos\n");
         Thread.sleep(3000);
 
         do {
 
-            System.out.println("Theo tem 2 opções, seguir no corredor escuro e enfrentar tudo o que pode\n acontecer, ou procurar um interruptor.\n");
+            System.out.println(
+                    "Theo tem 2 opções, seguir no corredor escuro e enfrentar tudo o que pode\n acontecer, ou procurar um interruptor.\n");
             Thread.sleep(3000);
             System.out.println("Digite 1 para procurar um interruptor");
             System.out.println("Digite 2 seguir no escuro");
@@ -365,13 +369,14 @@ public class Jogo {
                         + " porém para\n desbloquea-lo ele precisa descobrir a senha de "
                         + "acesso, que é a resposta\n de um eniguima!\n");
 
-                System.out.println("Qual a data de invasão  mais recente de um país pelo outro, dando inicio a uma guerra?");
+                System.out.println(
+                        "Qual a data de invasão  mais recente de um país pelo outro, dando inicio a uma guerra?");
                 Thread.sleep(3000);
                 timer.cancel();
 
                 int diaQ1,
-                 mesQ1,
-                 anoQ1;
+                        mesQ1,
+                        anoQ1;
                 do {
                     System.out.print("dia:");
                     diaQ1 = input.nextInt();
@@ -410,12 +415,12 @@ public class Jogo {
                 System.out.println("descubra onde e quando você está!");
                 Thread.sleep(3000);
                 timer.cancel();
-                //onde: Hiroshima 06/08/1945;
+                // onde: Hiroshima 06/08/1945;
 
                 String onde;
                 int diaQ2,
-                 mesQ2,
-                 anoQ2;
+                        mesQ2,
+                        anoQ2;
                 do {
 
                     onde = input.next();
@@ -459,7 +464,7 @@ public class Jogo {
                         + "cena de guerra, não as mais conhecidas, como imagem de homens fardados com \n"
                         + "armas, e sim a cena da cidade destruída, com pessoas feridas, desoladas, crianças \n"
                         + "perdidas chorando, e inúmeros tiroteios acontecendo ao redor.)");
-                //início desafio 1b    
+                // início desafio 1b
                 int resposta;
                 System.out.println("De repente um grupo de soldados o aborda, acreditando que Theo seja um infiltrado\n"
                         + "eles começam a questioná-lo sobre quem ele é e porque ele estava ali\n");
@@ -472,20 +477,22 @@ public class Jogo {
                 do {
                     System.out.println(
                             " 1) Vladmir Putin\n "
-                            + "2) Adolf Hitler\n "
-                            + "3) Josef Stalin\n"
-                            + " 4) Fidel Castro");
+                                    + "2) Adolf Hitler\n "
+                                    + "3) Josef Stalin\n"
+                                    + " 4) Fidel Castro");
                     System.out.println("insira o número que corresponde à alternativa correta");
                     resposta = input.nextInt();
                 } while (resposta != 1);
                 System.out.println("ótimo ele é ucraniano, deixem ele ir\n");
-                System.out.println("logo após, ainda muito assustado com o que estava acontecendo, Theo sai correndo novamente...");
+                System.out.println(
+                        "logo após, ainda muito assustado com o que estava acontecendo, Theo sai correndo novamente...");
                 Thread.sleep(3000);
-                System.out.println("Durante sua fuga desesperada Theo acaba se perdendo, até que começam a tocar sirenes alerta de bomba\n"
-                        + "Dessa mesma sirene começa a sair uma risada diabólica\n "
-                        + "mas logo essa risada é ofuscada pelo som mais alto e ensurdecedor de todos,\n"
-                        + "e junto desse som uma nuvem se forma no horizonte com a forma de um cogumelo.\n"
-                        + "Enquanto isso Theo escuta uma voz macabra que lembrava muito a de seu pai, lhe perguntanto se sabia onde estava ");
+                System.out.println(
+                        "Durante sua fuga desesperada Theo acaba se perdendo, até que começam a tocar sirenes alerta de bomba\n"
+                                + "Dessa mesma sirene começa a sair uma risada diabólica\n "
+                                + "mas logo essa risada é ofuscada pelo som mais alto e ensurdecedor de todos,\n"
+                                + "e junto desse som uma nuvem se forma no horizonte com a forma de um cogumelo.\n"
+                                + "Enquanto isso Theo escuta uma voz macabra que lembrava muito a de seu pai, lhe perguntanto se sabia onde estava ");
                 Thread.sleep(3000);
                 int resposta2;
                 System.out.println("\npara prosseguir responda onde você está");
@@ -493,9 +500,9 @@ public class Jogo {
                 do {
                     System.out.println(
                             " 1) Hiroshima quando: 06/09/1950\n "
-                            + "2) Nagazaki quando: 03/07/1943\n "
-                            + "3) Hiroshima quando: 06/08/1945\n"
-                            + " 4) Japão quando: 02/07/1942");
+                                    + "2) Nagazaki quando: 03/07/1943\n "
+                                    + "3) Hiroshima quando: 06/08/1945\n"
+                                    + " 4) Japão quando: 02/07/1942");
                     System.out.println("insira o número que corresponde à alternativa correta");
                     resposta2 = input.nextInt();
                 } while (resposta2 != 3);
@@ -549,7 +556,8 @@ public class Jogo {
             System.out.println("-Olá humano, quem é você?");
             Thread.sleep(3000);
             for (int FHi = 0; FHi < 1;) {
-                System.out.println("--Opções...\n(1) Se apresentar á raposa.\n(2) Não se apresentar e manter o silêncio.");
+                System.out.println(
+                        "--Opções...\n(1) Se apresentar á raposa.\n(2) Não se apresentar e manter o silêncio.");
                 int FHvCF = input.nextInt();
                 switch (FHvCF) {
                     case 1:
@@ -567,7 +575,8 @@ public class Jogo {
 
                         System.out.println("-Que ser rude você é.");
                         Thread.sleep(3000);
-                        System.out.println("Com um semblante chateado, a raposa some em uma forte ventania momentânea.\n");
+                        System.out.println(
+                                "Com um semblante chateado, a raposa some em uma forte ventania momentânea.\n");
                         System.out.println(
                                 "Se aproximando do rio, Theo se impressiona com o quanto aparenta ser muito fundo,\n e consegue observar uma ponte, um tanto distante");
                         System.out.println("que concede para o outro lado do rio.\n");
@@ -591,9 +600,10 @@ public class Jogo {
         if (FHesc1.equalsIgnoreCase("norte") || FHesc1.equalsIgnoreCase("n") || FHcontinua == 1) {
             System.out.println(
                     "\nSe aproximando do rio, Theo se impressiona com o quanto aparenta ser muito fundo,\n e "
-                    + "consegue observar uma ponte, um tanto distante que concede para o outro lado do rio");
+                            + "consegue observar uma ponte, um tanto distante que concede para o outro lado do rio");
 
-            System.out.println("No caminho até a ponte, encontra-se um índio sentado como se tivesse a sua espera...\n");
+            System.out
+                    .println("No caminho até a ponte, encontra-se um índio sentado como se tivesse a sua espera...\n");
             Thread.sleep(3000);
             System.out.println(
                     "-Oi Theo, você precisa aprender para se tornar um grande Deus, e para isso,\n precisa passar pelos desafios a sua frente \n");
@@ -619,7 +629,8 @@ public class Jogo {
                 System.out.println("Theo de baixo d'água avista algo se aproximando");
             }
 
-            System.out.println("Um grande peixe-gato de aparencia contraditória e assustradora, te convida para jogar 21");
+            System.out.println(
+                    "Um grande peixe-gato de aparencia contraditória e assustradora, te convida para jogar 21");
             Thread.sleep(3000);
             Namazu21();
 
@@ -668,11 +679,14 @@ public class Jogo {
             System.out.println("|    COMPLETE O EXEMPLO COM A SUA DEFINIÇÃO:         |\n| \t \t \t \t \t \t \t  |");
             for (int i = 1; i < definição.length - 3; i++) {
                 System.out
-                        .println("|  EXEMPLO " + i + ": " + definição[i] + "\t \t \t \t \t  |\n|    \t \t \t \t \t \t \t  | ");
+                        .println("|  EXEMPLO " + i + ": " + definição[i]
+                                + "\t \t \t \t \t  |\n|    \t \t \t \t \t \t \t  | ");
             }
-            System.out.println("|_________________________________________________________| \n| \t \t \t \t \t \t \t  |");
+            System.out
+                    .println("|_________________________________________________________| \n| \t \t \t \t \t \t \t  |");
             for (int i = 4; i < definição.length; i++) {
-                System.out.println("|  DEFINIÇÃO " + i + ": " + definição[i] + "\t \t \t \t  |\n| \t \t \t \t \t \t \t  |");
+                System.out.println(
+                        "|  DEFINIÇÃO " + i + ": " + definição[i] + "\t \t \t \t  |\n| \t \t \t \t \t \t \t  |");
             }
             System.out.println("|_________________________________________________________| \n"
                     + "()________________________________________________________)");
@@ -700,7 +714,8 @@ public class Jogo {
         System.out.println(
                 "Você escolhe uma das suas cartas e coloca sobre a mesa\nTodos os jogadores fazem o mesmo e compram uma carta");
         System.out
-                .println("O jogador que conseguir fazer chegar exatamente a 21 ganha!\n o jogador que ultrapassar o 21 perde.");
+                .println(
+                        "O jogador que conseguir fazer chegar exatamente a 21 ganha!\n o jogador que ultrapassar o 21 perde.");
     }
 
     public static void proc1() {
@@ -809,30 +824,52 @@ public class Jogo {
                     // config bot
                     System.out.println("Vez do monstro ...\n");
                     timer.cancel();
-                    //System.out.println("cartas do bot: " + cartaY1 + " " + cartaY2 + " " + cartaY3);
+                    // System.out.println("cartas do bot: " + cartaY1 + " " + cartaY2 + " " +
+                    // cartaY3);
                     if (contador1 == 1) {
                         if (cartaY1 >= cartaY2) {
                             if (cartaY1 == cartaY2) {
+                                if (cartaY1 == 0) {
+                                    cartaY1 = cartB2.nextInt(10) + 1;
+                                }
                                 entr2 = cartaY1;
                                 cartaY1 = cartB2.nextInt(10) + 1;
                             }
                             if (cartaY1 > cartaY3) {
+                                if (cartaY1 == 0) {
+                                    cartaY1 = cartB2.nextInt(10) + 1;
+                                }
                                 entr2 = cartaY1;
                                 cartaY1 = cartB2.nextInt(10) + 1;
                                 // System.out.println("Nova carta do bot: " + cartaY1);
                             } else {
+                                if (cartaY3 == 0) {
+                                    cartaY3 = cartB2.nextInt(10) + 1;
+                                }
                                 entr2 = cartaY3;
                                 cartaY3 = cartB2.nextInt(10) + 1;
-                                //  System.out.println("Nova carta do bot: " + cartaY3);
+                                // System.out.println("Nova carta do bot: " + cartaY3);
                             }
                         } else if (cartaY2 >= cartaY3) {
                             if (cartaY2 == cartaY3) {
+                                if (cartaY2 == 0) {
+                                    cartaY2 = cartB2.nextInt(10) + 1;
+                                }
                                 entr2 = cartaY2;
+                                cartaY2 = cartB2.nextInt(10) + 1;
+                            }
+                            if (cartaY2 == 0) {
+                                cartaY2 = cartB2.nextInt(10) + 1;
+                            }
+                            if (cartaY2 == 0) {
+                                cartaY2 = cartB2.nextInt(10) + 1;
+                            }
+                            if (cartaY2 == 0) {
                                 cartaY2 = cartB2.nextInt(10) + 1;
                             }
                             entr2 = cartaY2;
                             cartaY2 = cartB2.nextInt(10) + 1;
-                            //  System.out.println("Nova carta do bot: " + cartaY2);
+                            // System.out.println("Nova carta do bot: " + cartaY2);
                         }
                     } else {
 
@@ -841,10 +878,10 @@ public class Jogo {
                             // System.out.println("Nova carta do bot:" + cartaY1);
                         } else if (cMesa + cartaY2 == 21) {
                             entr2 = cartaY2;
-                            //  System.out.println("Nova carta do bot:" + cartaY2);
+                            // System.out.println("Nova carta do bot:" + cartaY2);
                         } else if (cMesa + cartaY3 == 21) {
                             entr2 = cartaY3;
-                            //  System.out.println("Nova carta do bot:" + cartaY3);
+                            // System.out.println("Nova carta do bot:" + cartaY3);
                         } else {
                             if (cartaY1 <= cartaY2) {
                                 if (cartaY1 == cartaY2) {
@@ -860,7 +897,7 @@ public class Jogo {
                                     if (cartaY2 <= cartaY3) {
                                         entr2 = cartaY2;
                                         cartaY2 = cartB2.nextInt(10) + 1;
-                                        //System.out.println("Nova carta do bot: " + cartaY2);
+                                        // System.out.println("Nova carta do bot: " + cartaY2);
                                     }
                                 } else if (cartaY3 <= cartaY1) {
                                     if (cartaY3 <= cartaY2) {
