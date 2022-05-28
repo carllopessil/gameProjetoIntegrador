@@ -13,6 +13,8 @@ public class Jogo {
         // ARRUMAR HISTORIA DA PARTE DO CARLOS E GU
         // ARRUMAR FINAL
         // COLOCAR PARTE DA LETRA GRANDE NO COMEÇO
+        //FELIPE CONFIRMAR SE A PARTE DO JOGO ESTÁ RODANDO
+        //JOÃO RODAR TODO O JOGO E REVISAR A HISTORIA
 
     }
 
@@ -311,7 +313,7 @@ public class Jogo {
                 + "\nque passar por um índio que tem que objetivo de usar os ensinamentos de\nAthena e aprender um pouco sobre a natureza");
         Thread.sleep(3000);
 
-        //FH();
+        FH();
         timer.cancel();
         System.out.println("Theo é chamado por Zeus para ganhar a aprovação para se tornar um Deus.");
         System.out.println("Ele se depara com os três principais Deuses como Zeus, Hades e Poseidon. \n");
