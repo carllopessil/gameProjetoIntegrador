@@ -7,6 +7,33 @@ import java.util.Timer;
 public class Jogo {
 
     public static void main(String[] args) throws InterruptedException {
+        System.out.println("GGBB#&&J????GY?J55PJYBBGBBBGGBBBBGGGGGBGGGGGGGGGGGGGGGGGGBBBBBB#####&&&&&&&&&&&&&&&&&&&&&@@&&&&&##########&&#####&&&&@@@@@@&&&&####BBGP55YJJ5GBB#G5PP555555YYY55PGGPGB#&&&&&&&&&&&#&&&&&&&&&&&&&&&&&&&&&\n" +
+"GBP5J??7?JJ?5G?J5PPYJGGGGGGGGGGGGBBBBBBBBBBBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&####&&#&###&&&&&@&@@@@@&&########BBGGGPP5PGBB##&BPJ5PPBBGGGPPPPPPB#&&&&#BGB#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n" +
+"G5JY7^:^7???5P?YPGP5PBBB#################&&&#####################&&&&&&&&&&&&&&&&&&&&&&@@&&&&&&&&###&#&&##&&&&&&&&@@@&#####&&&###BBBBBB##&B&&&&#B#PPPGGBB##&#####&&###GPPGBG#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n" +
+"5?J5PPYPPPGBBBBB#&&&&&&&&&&&&&&&&&&&#&#######################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&####&&&&&&&&&&&&@@@&###&&&&&###BB#####&@&GB####PB&GGGGBBB##&##&&##B#&&G5PB###&&&&&&&&&&&&&&&&&&&&&&&&&&&\n" +
+"???YPGGB##BB######&&&&&&&&&&&&&#########################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&&&&&&&#####&@&&&&&&&@@@&##&&&&&###BGP5GB#&&@@&PG###BPG##BBBBB#BBB##&&#B#&&&&&#GBB#&&&&&&&&&&&&&&&&&&&&&&&&&&##\n" +
+"!??7J5PGGB##BB######&&&#####################################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#&&#&&&&&&&&&@@@&B#&&&&##GP555GB#&&&@@&PYJ5#?:^5##@&#&B?5B##BB#B#&&&##&#######&&&&&#&&&&&&&&&&&&&#######\n" +
+"77777Y?YPGGGBBGGBBBBGB#########B######B5P##############&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&B#&&&&&&##&&&&&&&&@@&@&#B#&&&&#GP5PGB#&&&#&&@&GBBPY~~YGG#&BB&BP7?P&&&&&&&&PBPPPPB&#&&###&&&&#&&&&&&&&&&&&&&&####\n" +
+"77777JJ?Y55P5PBG5GGGG5BBBBB###########~ J########&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&GB&#&##&&&&#&&&&#&&&&@@&&BB&&@&#G5PGBB##&&&&&&&#B#&#BJJG&BPPG#&BGGB#&&&&&&&#P7?Y?JJYB#&&&&&##&&##&&&&&##&&&&&&&#&#&\n" +
+"7?777?Y7JYJYYY5B55GGGPB#############&5.7&##&#&&&&&&&&&&&&&&&&&&&&&&&########&&&&&&GG###&#&&&&&&&@&&&&&&@&@&&#G#&&&#BP55GBBBB##&&&&BBYP###!...5#GB?7YBGB&&#B#&&###J?!!~~!7#&&&&#&&&&&##&&&&#B&&&&&&&&&&&#\n" +
+"7777?7?J7!~JY5PBPG####&#GGG#&&##B###&BG#&##&&#B#######BB########BGGB####B#&&&&#G5BBB#GB######&&&@@#BBB#&@@&BG#&BBB###BBGPGGB#&&&#GGB####? 7Y.:P&&55#&###&BPPG#&&@@#GY55GYG&&##&#BBGB##&&&##&&&&&&&&&&&&&\n" +
+"77777?Y55Y5GPGBBBGB##P!^^~~^7BB^^B&&#!:J&####!:?#BBBBG^:P####B?^^~~^~5&7:J&BPYPBG#7~~~^^~~~~!#@&5!^~~~^^7PBG&&5:~&&&##G^:?GBB#BBB######Y.^G#7 ~BB#&&&B^^5!^^:P&&G7^~~~:^7J#&##J~~!!~~5@&#&&&&&&&&&&&&&&&\n" +
+"77??J5YPPGGBBGBB##B#Y.:Y###P^^? ~####^ ?#BBBB~ 7BBBB#G..5###B^ 7B##B?.?:.Y5JYPGB&##B#P..P####&&! ~G&&&#5:.?&&&5 :##BGP5~.~GGBB#&&&BB##P:.YB5Y^ 7&@&&@B..:JB#B#&Y.^5P#BY!.:5&&J ^G#GP5G&#&&&&&&&&&&&&&&&&\n" +
+"JJY55P5JYGGGBBBBBB#B: J&####P...5BBBB^ ?#BBB#~ 7#####G:.5###? ^#&&&&&~..~Y5PGGB#&&&&&G.:B&&&&@Y ^#@&&&&&Y.:B&&5 :GGP5Y57.^B&&########B~.?##PGP:.5###&G..5&&&&&B:.7YYY?JJ: 7B&Y:.!?YP#BG#&&&&&&&&&&&&&&&&\n" +
+"55555PP5J?5GGPGBBPP5..JPPBBBP:.7BBBBB^ ?#####~ ?#####G:.P&&&! !&&&#BP~.:5GGB#&&&&&&&&P.:B&&&&@? ~&&&&&&#Y..P#&Y ^555PG#J ^###&&&###BG7..~~~~~!:.:J5G&G..G&##&&5..7??7?JJ?JPBBBYJ?!^:~YGGB#&&&&&&&&&&&&&&\n" +
+"5YY55PP5P5??Y5YY5G5J^.!G5G#B?..Y####B^ ?&####~ !#&&&#Y..P@&&Y :PBPYJ7..^B#&&&#&&##&&&G..P@@&&&P..5@@@@&P~ !BB&5.:YGBB##~ ?###GGB#GPGJ.:5G5YPPGB! ^B#&G..P###&G5^ 7#B#&&&&###BGGG#&PJ..PGGBB#&&&&&&&&&&&&\n" +
+"YYY555555555J?JYYYBPJ^.^77J~^7.:JJP##?.:?JJ#&~..~JY?~~^ !Y5&#?.:~~!!:7~.?YY####&&&&&&&! ^JJY&&&Y^.!JYY7::7##BBG~.:?Y?7^:JB#&B555PG#G:.Y@BYPB#@@B^ !#&P. 5##&BPBP~.^7YYYJ7!BBY~~?JY?^.!BG5PP5G&&&###B&&&&\n" +
+"YY55555P5PPP5YJ55YBG5P5?!7?YB#P?7?G&##PJ??Y#&~ 7Y??JP&BY?75#BB5J?!7YG&BY77Y###&&&&&&&&#5J??P&&&&#PY?7775#&&#PY5GPJ?!7JP#@&&#BGG#&##Y~?&BGB#BGGPG57?#&GJJB##BPBGGBYY?77?JJG&G5J??7!??5BBG5YYYYG&&#GGP#&&&\n" +
+"Y5555555PP55PPYY5PB5GBBGG######&&&&###&&&&&&#~ ?&&&&&#&##BBBBB####&&#########&&&&&&&&&&&&&&&&&&&&@@&#GG#&&#Y5GPGBBB#B&@&#BGB#&&###&#GG&PJP#&5?JYYJY#&#&@&&B5GBGB5G&&BB##&&&####&#BBBPBPPB55YY5G&&BGPB##&\n" +
+"YY55555PPPPPG5Y5PBPPBBGG#####################7:J&####BBGGGBBB#########B########&&&&&&&&&&&##&&&&&&&#BPG#&&#JJPGGGBBJJG#B##&&###&&&&@@&###&&@BPB&&#&&&&&&@#5GGGB5P#&#B###&&&&##BB###BGGBBBBY5YY5B&#PG####\n" +
+"YYY555555PGGP5PPBGPBBBG##############BB#######B####BGGGBBBBB##################&&&&&#&&&&&&#&&&&&&&&#BGB#&&#P5PGB#&#GG##&&#B#&B#&&&&&##&&&&&&&@@&&&&&&&&@#YGGGG5P&&#BB##&&###&##BBBB#BG5PGBPY5YYP#&PG#&##\n" +
+"YY5555PPPGGGP5PG#GG##BG#######BBBBBB#########BBBBBGGBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&##BB#&&GGGB##&&&&&####G5G#PG####&&&&@@@&&&&&&&#&&&&@#YGGGG5P@&&##B#&&&#&######BGBB??5GPP5PPPPB#PP#&&#\n" +
+"YY5555PPPGGG5PPG#GGBBBPG#BBBBBBBB##########BGY5YYGBGGBBB##B###BB#########&#&###&&##&&&&&&&&&&&&&&&##BBB###GGBPG&&&##BB##&####&&&&#&&&&@@&&&&&&&&##&&&&#YPGGB5P@&&##BB#############BGGPPPGBGPPPPGB#PP#&&&\n" +
+"5YY5P5PPPPGG5PPG#GPGGGG5PGGGPPGB###B##B5?5PGP?JYBBGBB##BBB###BB############&&#&&&##&&&&&&&&&&&BGGGGB#GG#BPGBG5PB#BBB#####&&&&&&&&&&&&&&&&&&&&&###&&&@#YGGGBP5&GYB#B#&BBB###########BGB#GGGGBGGP55PPPB&&&\n" +
+"5YY5P55PPGGGY555PB5YPGGGGGB##G5Y5PGBBP57JYP55PP5B###B##BB###BBB############&&&&&#&&&&&#&&&&&&&&#####&BGGBGGPGBGB#####BB#&&&##&&&&&&&&&&&&&&&#####&&&#YGBGBBG##P55B&&&&GPGB#####BGGGGGGGBGBGGGGGGP?7Y5PBB\n" +
+"5Y5PPPPPPGGGPYJYY5GGPGB##BBBB##P55PP5J?Y55P5JPBBB##BB##BB################&&&###############&&&&&&&&&##B#&##&BPBGBBBGB#&&###&&&&&&&&&&&&&&&&######&&#5GGGBBBBBGGB#&@&&&&B5PG####BGPYYY5PBBB#BBBPGG?JPGPJ!\n" +
+"55PPPPPGGGGGGG5Y55PBBBGGBB##BBBGP5J?7JYYYPPYJPBB#B##BB#BBBBB###############BBBBBB###############BBBGGB##GGB5?!JGBB#&#####&&&&&&&&&&&&&&&&&&####B#BGPGGY5GGPPG#&&&&&&&&&&B5PB####BG5YY55GBBB#BBBGBGPPPPJJ\n" +
+"PPPPPPPPPPGGGGGP555PPGBBGP5555PY?777?JJ?5PYY5GBBBB####BBBBBB####B###BBBBBBBBBB#BBBBBBBBBBBGGGGGBBBGG#55PBPY?YPG####BB##&&&&&&&&&&&&&&&&&&####BGP5PGGGGG5PG#&@&&&&&&&&&&&&#PPB####BGPPPPPGBB##B#BP5Y5GP5");
         menu();
 
         // FALTA COMPLETAR MENU (RESUMO E SAIR)
@@ -23,22 +50,22 @@ public class Jogo {
         Timer timer = new Timer();
         int entrada;
         do {
-            System.out.println("--- MENU ----");
+            System.out.println("------- MENU -------");
+            System.out.println("\n");
             System.out.println("(1) JOGAR");
             System.out.println("(2) HISTÓRIA");
             System.out.println("(3) SAIR");
             System.out.println("\nEscolha sua opção:");
             entrada = input.nextInt();
-        } while (entrada < 1 || entrada >= 4);
 
-        if (entrada == 1) {
-            returnText();
+            switch (entrada){
+                case 1:;
+                returnText();
             Thread.sleep(3000);
             timer.cancel();
             menu();
-        }
-        if (entrada == 2) {
-            int enter;
+                case 2:;
+                int enter;
             System.out.println("---RESUMO---");
             do {
 
@@ -49,8 +76,101 @@ public class Jogo {
                 }
             } while (enter != 1);
 
-        }
-
+                case 3:
+                    System.out.println("------  sangue de ares ------");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("------     historia     ------");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("------     CARLOS     --------");
+                    Thread.sleep(500);
+                    System.out.println("------     HELOYSA    --------");
+                    Thread.sleep(500);
+                    System.out.println("------     fellipe    --------");
+                    Thread.sleep(500);
+                    System.out.println("------      JOÃO      --------");
+                    Thread.sleep(500);
+                    System.out.println("------     GUSTAVO    --------");
+                    Thread.sleep(500);
+                    System.out.println("------     FELIPE     --------");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("------  desenvolvimento ------");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("------     CARLOS     --------");
+                    Thread.sleep(500);
+                    System.out.println("------     HELOYSA    --------");
+                    Thread.sleep(500);
+                    System.out.println("------     fellipe    --------");
+                    Thread.sleep(500);
+                    System.out.println("------      JOÃO      --------");
+                    Thread.sleep(500);
+                    System.out.println("------     GUSTAVO    --------");
+                    Thread.sleep(500);
+                    System.out.println("------     FELIPE     --------");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("------     analise     -------");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("------     CARLOS     --------");
+                    Thread.sleep(500);
+                    System.out.println("------     HELOYSA    --------");
+                    Thread.sleep(500);
+                    System.out.println("------     fellipe    --------");
+                    Thread.sleep(500);
+                    System.out.println("------      JOÃO      --------");
+                    Thread.sleep(500);
+                    System.out.println("------     GUSTAVO    --------");
+                    Thread.sleep(500);
+                    System.out.println("------     FELIPE     --------");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("");
+                    Thread.sleep(500);
+                    System.out.println("------  sangue de ares ------");
+                    Thread.sleep(500);
+                    System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P             7@@@@@^    B@@@@@!      Y@@@@@?      J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    ^55555555G@@@@@^    B@@@@@!      ^@@@@&.      J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   :.  P@@@Y  ..   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !~  ~@@@^  7~   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    ~#BBBBB&@@@@@@@^    B@@@@@!   7P   B@P   G^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P           5@@@@@@@^    B@@@@@!   !@:  7@~  ~@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    .::::::P@@@@@@@^    B@@@@@!   !@J  .5   5@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    !@&&&&&@@@@@@@@^    B@@@@@!   !@#.  .  :&@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@!     J@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@G    .#@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@@^   !@@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@@5   G@@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@G.::.7@@@@@@@@@@@@@@~.:::B@@@@@?.:.7@@@&^.~@@@@~.:.Y@@@@@@@@@@@@@@@@@@@@@@@@\n" +
+"@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&@@@@@@@@@@@@@@&&&&&@@@@@@&&&&&@@@@&&@@@@@&&&&@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+                    break
+                    ;
+                
+            }
+           } while (entrada !=3);
     }
 
     static int ataqueTheo() {
@@ -289,21 +409,21 @@ public class Jogo {
     static void returnText() throws InterruptedException {
         Timer timer = new Timer();
         System.out.println("\n Tudo começa em uma festa no Olimpo, onde dois Deuses, Ártemis e Ares\n "
-                + "se apaixona e acaba tendo um filho chamado Theo.\n"
-                + "Isso causa uma grande revolta em Zeusa que acaba mandando o Ares para\nenfrentar os Titãs.\n");
+                + "se apaixonam e acaba gerando um filho, chamado Theo.\n"
+                + "Isso causa uma grande revolta em Zeus que acaba mandando o Ares para\nenfrentar os Titãs.\n");
         Thread.sleep(3000);
         System.out.println(
-                "Onde Theo acaba perdendo seu pai na guerra contra os Titãs, com tudo,\n acaba deixando os Deuses"
-                        + " do Olimpo furiosos com Zeus, para que Zeus\n não levasse toda a culpa, ele acaba tendo uma solução.");
+                "nessa batalha contra os Titãs, Theo acaba perdendo seu pai, com tudo, \n os Deuses"
+                        + " do Olimpo ficam furiosos com Zeus, para que Zeus\n não levasse toda a culpa, ele acaba tendo uma solução.");
         System.out.println("Onde ele resolve colocar Theo para assumir o lugar de seu pai.\n");
         Thread.sleep(3000);
 
         System.out.println(
-                "Só que Theo ainda era criança e precisava de treinamento para \nassumir esse grande posto,então Zeus "
-                        + "resolve que Ártemis que deverá ");
+                "Theo ainda era criança e precisava de treinamento para \nassumir esse grande posto,então Zeus "
+                        + "resolve que Ártemis deverá ");
         System.out.println("cuidar de Theo e dar todos os ensinamentos necessários.\n");
         Thread.sleep(3000);
-        System.out.println("Só que a Ártemis não daria conta de dar todos os ensinamentos para Theo.");
+        System.out.println("Só que Ártemis não daria conta de dar todos os ensinamentos para Theo.");
         System.out.println(
                 "Athena vendo toda aquela situação ela resolve ajudar, dando ensinamentos\n sobre estratégias e alguns "
                         + "ensinamentos sobre Guerra.\n");
@@ -341,9 +461,13 @@ public class Jogo {
         // contextualização
         System.out.println("Atena, no intuito de preparar Theo, e trazer o conhecimento e sabedoria da \nguerra, "
                 + "ela o leva para uma experiência de guerra, onde ele iria conhecer a\n verdade sobre as guerras,"
-                + "diferente da visão que seu pai tinha\n");
+                + "diferente da visão que seu pai tinha.\n"
+                + "para isso, Theo é deixado levado á uma especie de bifrost, e rapidamente é teletransportado sozinho.");
         Thread.sleep(3000);
         // história
+        System.out.println("");
+        System.out.println("----- TREINAMENTO ATENA -----");
+        System.out.println("");
 
         System.out.println(
                 "Iniciando em um corredor totalmente escuro, com ruídos de armas recarregando, \ne fuzis disparando, como se fossem"
@@ -367,7 +491,7 @@ public class Jogo {
             case 1:
                 System.out.println("ao procurar o interruptor, ele (theo), encontra um tablet,"
                         + " porém para\n desbloquea-lo ele precisa descobrir a senha de "
-                        + "acesso, que é a resposta\n de um eniguima!\n");
+                        + "acesso, que é a resposta\n deo eniguima!\n");
 
                 System.out.println(
                         "Qual a data de invasão  mais recente de um país pelo outro, dando inicio a uma guerra?");
@@ -399,7 +523,7 @@ public class Jogo {
                         + "sentidos, e acaba desmaiando.");
                 Thread.sleep(3000);
                 System.out.println("Tempo depois. Ele acorda sem saber onde está, em um local "
-                        + "completamente escuro.\n De repente, acende painéis iluminando apenas as áreas "
+                        + "completamente escuro.\n quando repentinamente, acende painéis iluminando apenas as áreas "
                         + "onde podem ser pisadas,\n mantendo a escuridão no entorno.\n");
                 Thread.sleep(3000);
                 System.out.println("O Theo decide se mover pelo corredor, ao som de bombas explodindo,"
@@ -407,8 +531,9 @@ public class Jogo {
                         + "pelo caminho, ele recebe pelo tablet um "
                         + "“torpedo” questionando se ele \nsabe onde e quando ele está?\n");
                 Thread.sleep(3000);
-                System.out.println("DERREPENTE Theo houve um barulho ensurdecedor,\n"
-                        + "como nunca ninguém ouviu antes, e de repente tudo se ilumina!\n"
+                System.out.println("por um instante Theo não tem nenhuma pista de onde está"
+                        + "até que DERREPENTE Theo houve um barulho ensurdecedor,\n"
+                        + "como nunca ninguém ouviu antes, tudo se ilumina!\n"
                         + "uma nuvem gigante em formato de cogumelo se forma ao fundo! parece o apocalipse\n"
                         + " para fugir disso,\n ");
                 Thread.sleep(3000);
@@ -422,7 +547,7 @@ public class Jogo {
                         mesQ2,
                         anoQ2;
                 do {
-
+                    System.out.println("onde você está?");
                     onde = input.next();
                     if (onde.equalsIgnoreCase("hiroshima")) {
                         System.out.println("você acertou onde!");
@@ -483,7 +608,7 @@ public class Jogo {
                     System.out.println("insira o número que corresponde à alternativa correta");
                     resposta = input.nextInt();
                 } while (resposta != 1);
-                System.out.println("ótimo ele é ucraniano, deixem ele ir\n");
+                System.out.println("ótimo ele não é soldado russo, deixem ele ir\n");
                 System.out.println(
                         "logo após, ainda muito assustado com o que estava acontecendo, Theo sai correndo novamente...");
                 Thread.sleep(3000);
