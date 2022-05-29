@@ -760,7 +760,7 @@ public class Jogo {
             System.out.println("obter os conhecimentos necessários, você está pronto para o desafio final");
             System.out.println("Sua mãe acaba dando-lhe  um presente");
             Thread.sleep(3000);
-            System.out.println("- Filho, esse presente que estou lhe dando, é para você se defender do \n"
+            System.out.println("-Filho, esse presente que estou lhe dando, é para você se defender do \n"
                     + "mal que aparecer na sua jornada.");
 
             System.out.println("Theo acaba recebendo um arco de sua Mãe...");
