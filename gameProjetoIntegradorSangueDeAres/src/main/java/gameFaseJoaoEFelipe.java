@@ -247,11 +247,24 @@ public class gameFaseJoaoEFelipe {
         int continua = 1;
         while (continua == 1) {
 
-           fightGrifo();
+           fightMinotauro();
 
-            System.out.println(" Fim ! (1) para continuar ");
+            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
             continua = leitor.nextInt();
         }
+while (continua == 1) {
 
+           fightEquidna();
+
+            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
+            continua = leitor.nextInt();
+        }
     }
+while (continua == 1) {
+
+           fightGrifo();
+
+            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
+            continua = leitor.nextInt();
+        }
 }
