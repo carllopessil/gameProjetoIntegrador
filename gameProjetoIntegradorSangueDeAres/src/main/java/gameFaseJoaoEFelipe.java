@@ -243,7 +243,8 @@ public class gameFaseJoaoEFelipe {
         }
     }
 
-    public static void main(String[] args) {
+    static int DesafioZeus() {
+
         int a = 1;
         int b = 1;
         int c = 1;
@@ -269,6 +270,13 @@ public class gameFaseJoaoEFelipe {
 
             System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
             c = leitor.nextInt();
+
         }
+    
     }
+    
+    public static void main(String[] args) {
+        DesafioZeus();
+    }
+
 }
