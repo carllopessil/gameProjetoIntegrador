@@ -243,7 +243,7 @@ public class gameFaseJoaoEFelipe {
         }
     }
 
-    static int DesafioZeus() {
+    static void DesafioZeus() {
 
         int a = 1;
         int b = 1;
