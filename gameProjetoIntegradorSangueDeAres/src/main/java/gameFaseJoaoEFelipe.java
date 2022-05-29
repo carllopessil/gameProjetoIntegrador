@@ -6,24 +6,17 @@ import java.util.Scanner;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-
 /**
  *
  * @author felipe.salencar
  */
 public class gameFaseJoaoEFelipe {
 
-
-
-
-
-
-
     static Scanner leitor = new Scanner(System.in);
 
     static int ataqueTheo() {
         System.out.println(" Tome uma decis√£o ");
-        System.out.println("(1) ( ATAQUE TIPO √ÅGUA )");
+        System.out.println("(1) ( ATAQUE TIPO √?GUA )");
         System.out.println("(2) ( ATAQUE TIPO TERRA )");
         System.out.println("(3) ( ATAQUE TIPO RAIO )");
         System.out.println("(4) ( DIALOGO )");
@@ -66,7 +59,7 @@ public class gameFaseJoaoEFelipe {
             switch (decisao) {
 
                 case 1:
-                    System.out.println(" ATAQUE TIPO √ÅGUA\n");
+                    System.out.println(" ATAQUE TIPO √?GUA\n");
                     hpMonstro -= 5;
                     System.out.println("Theo usa lembra√ßas da natureza. \n");
 
@@ -131,7 +124,7 @@ public class gameFaseJoaoEFelipe {
             switch (decisao) {
 
                 case 1:
-                    System.out.println(" ATAQUE TIPO √ÅGUA\n");
+                    System.out.println(" ATAQUE TIPO √?GUA\n");
                     System.out.println("Ataque n√£o surgiu efeito e foi repelido pela criatura !\n ");
                     hpTheo -= 3;
                     break;
@@ -159,7 +152,7 @@ public class gameFaseJoaoEFelipe {
                 decisao = ataqueMonstro();
                 switch (decisao) {
                     case 1:
-                        System.out.println(" Equidna usa RAJADA D'√ÅGUA ! \n");
+                        System.out.println(" Equidna usa RAJADA D'√?GUA ! \n");
                         hpTheo -= 4;
                         System.out.println("Theo sente sua armadura cada vez mais pesada... \n");
                         break;
@@ -194,7 +187,7 @@ public class gameFaseJoaoEFelipe {
             switch (decisao) {
 
                 case 1:
-                    System.out.println(" ATAQUE TIPO √ÅGUA\n");
+                    System.out.println(" ATAQUE TIPO √?GUA\n");
                     System.out.println(" Theo usa Flecha da natureza. \n ");
                     hpMonstro -= 6;
                     break;
@@ -251,9 +244,14 @@ public class gameFaseJoaoEFelipe {
     }
 
     public static void main(String[] args) {
-        fightGrifo();
+        int continua = 1;
+        while (continua == 1) {
+
+           fightGrifo();
+
+            System.out.println(" Fim ! (1) para continuar ");
+            continua = leitor.nextInt();
+        }
+
     }
-
 }
-
-
