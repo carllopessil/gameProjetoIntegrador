@@ -444,7 +444,7 @@ public class Jogo {
         System.out.println("\nMinotauro que representa Hades , Equidna que representa Poseidon e Grifo que\n"
                 + "representa Zeus.");
         Thread.sleep(3000);
-        fightGrifo();
+        DesafioZeus();
         System.out.println("Parabéns Theo, você conseguiu!!");
         System.out.println("Você se esforçou e se dedicou para chegar até aqui");
         System.out.println("----");
