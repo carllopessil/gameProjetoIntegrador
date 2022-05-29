@@ -244,7 +244,11 @@ public class gameFaseJoaoEFelipe {
     }
 
     static void DesafioZeus() {
-
+        System.out.println("____________Desafio de ZEUS____________");
+        System.out.println("Neste desafio lutara contra 3 criaturas!");
+        System.out.println("Regras da batalha se voce derrotar uma critaura poderar seguir em frete caso contrario deve lutar novamente!");
+        System.out.println("Boa sorte ! ");
+        
         int a = 1;
         int b = 1;
         int c = 1;
