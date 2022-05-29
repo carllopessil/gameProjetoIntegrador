@@ -244,27 +244,31 @@ public class gameFaseJoaoEFelipe {
     }
 
     public static void main(String[] args) {
-        int continua = 1;
-        while (continua == 1) {
+        int a = 1;
+        int b = 1;
+        int c = 1;
 
-           fightMinotauro();
+        while (a == 1) {
+
+            fightMinotauro();
 
             System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
-            continua = leitor.nextInt();
+            a = leitor.nextInt();
         }
-while (continua == 1) {
+        while (b == 1) {
 
-           fightEquidna();
+            fightEquidna();
 
             System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
-            continua = leitor.nextInt();
+            b = leitor.nextInt();
+        }
+
+        while (c == 1) {
+
+            fightGrifo();
+
+            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
+            c = leitor.nextInt();
         }
     }
-while (continua == 1) {
-
-           fightGrifo();
-
-            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
-            continua = leitor.nextInt();
-        }
 }
