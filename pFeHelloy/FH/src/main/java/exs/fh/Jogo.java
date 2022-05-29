@@ -8,9 +8,6 @@ public class Jogo {
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("GGBB#&&J????GY?J55PJYBBGBBBGGBBBBGGGGGBGGGGGGGGGGGGGGGGGGBBBBBB#####&&&&&&&&&&&&&&&&&&&&&@@&&&&&##########&&#####&&&&@@@@@@&&&&####BBGP55YJJ5GBB#G5PP555555YYY55PGGPGB#&&&&&&&&&&&#&&&&&&&&&&&&&&&&&&&&&\n"
-                + "GBP5J??7?JJ?5G?J5PPYJGGGGGGGGGGGGBBBBBBBBBBBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&####&&#&###&&&&&@&@@@@@&&########BBGGGPP5PGBB##&BPJ5PPBBGGGPPPPPPB#&&&&#BGB#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n"
-                + "G5JY7^:^7???5P?YPGP5PBBB#################&&&#####################&&&&&&&&&&&&&&&&&&&&&&@@&&&&&&&&###&#&&##&&&&&&&&@@@&#####&&&###BBBBBB##&B&&&&#B#PPPGGBB##&#####&&###GPPGBG#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n"
-                + "5?J5PPYPPPGBBBBB#&&&&&&&&&&&&&&&&&&&#&#######################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&####&&&&&&&&&&&&@@@&###&&&&&###BB#####&@&GB####PB&GGGGBBB##&##&&##B#&&G5PB###&&&&&&&&&&&&&&&&&&&&&&&&&&&\n"
                 + "???YPGGB##BB######&&&&&&&&&&&&&#########################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&&&&&&&#####&@&&&&&&&@@@&##&&&&&###BGP5GB#&&@@&PG###BPG##BBBBB#BBB##&&#B#&&&&&#GBB#&&&&&&&&&&&&&&&&&&&&&&&&&&##\n"
                 + "!??7J5PGGB##BB######&&&#####################################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#&&#&&&&&&&&&@@@&B#&&&&##GP555GB#&&&@@&PYJ5#?:^5##@&#&B?5B##BB#B#&&&##&#######&&&&&#&&&&&&&&&&&&&#######\n"
                 + "77777Y?YPGGGBBGGBBBBGB#########B######B5P##############&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&B#&&&&&&##&&&&&&&&@@&@&#B#&&&&#GP5PGB#&&&#&&@&GBBPY~~YGG#&BB&BP7?P&&&&&&&&PBPPPPB&#&&###&&&&#&&&&&&&&&&&&&&&####\n"
@@ -27,13 +24,7 @@ public class Jogo {
                 + "Y5555555PP55PPYY5PB5GBBGG######&&&&###&&&&&&#~ ?&&&&&#&##BBBBB####&&#########&&&&&&&&&&&&&&&&&&&&@@&#GG#&&#Y5GPGBBB#B&@&#BGB#&&###&#GG&PJP#&5?JYYJY#&#&@&&B5GBGB5G&&BB##&&&####&#BBBPBPPB55YY5G&&BGPB##&\n"
                 + "YY55555PPPPPG5Y5PBPPBBGG#####################7:J&####BBGGGBBB#########B########&&&&&&&&&&&##&&&&&&&#BPG#&&#JJPGGGBBJJG#B##&&###&&&&@@&###&&@BPB&&#&&&&&&@#5GGGB5P#&#B###&&&&##BB###BGGBBBBY5YY5B&#PG####\n"
                 + "YYY555555PGGP5PPBGPBBBG##############BB#######B####BGGGBBBBB##################&&&&&#&&&&&&#&&&&&&&&#BGB#&&#P5PGB#&#GG##&&#B#&B#&&&&&##&&&&&&&@@&&&&&&&&@#YGGGG5P&&#BB##&&###&##BBBB#BG5PGBPY5YYP#&PG#&##\n"
-                + "YY5555PPPGGGP5PG#GG##BG#######BBBBBB#########BBBBBGGBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&##BB#&&GGGB##&&&&&####G5G#PG####&&&&@@@&&&&&&&#&&&&@#YGGGG5P@&&##B#&&&#&######BGBB??5GPP5PPPPB#PP#&&#\n"
-                + "YY5555PPPGGG5PPG#GGBBBPG#BBBBBBBB##########BGY5YYGBGGBBB##B###BB#########&#&###&&##&&&&&&&&&&&&&&&##BBB###GGBPG&&&##BB##&####&&&&#&&&&@@&&&&&&&&##&&&&#YPGGB5P@&&##BB#############BGGPPPGBGPPPPGB#PP#&&&\n"
-                + "5YY5P5PPPPGG5PPG#GPGGGG5PGGGPPGB###B##B5?5PGP?JYBBGBB##BBB###BB############&&#&&&##&&&&&&&&&&&BGGGGB#GG#BPGBG5PB#BBB#####&&&&&&&&&&&&&&&&&&&&&###&&&@#YGGGBP5&GYB#B#&BBB###########BGB#GGGGBGGP55PPPB&&&\n"
-                + "5YY5P55PPGGGY555PB5YPGGGGGB##G5Y5PGBBP57JYP55PP5B###B##BB###BBB############&&&&&#&&&&&#&&&&&&&&#####&BGGBGGPGBGB#####BB#&&&##&&&&&&&&&&&&&&&#####&&&#YGBGBBG##P55B&&&&GPGB#####BGGGGGGGBGBGGGGGGP?7Y5PBB\n"
-                + "5Y5PPPPPPGGGPYJYY5GGPGB##BBBB##P55PP5J?Y55P5JPBBB##BB##BB################&&&###############&&&&&&&&&##B#&##&BPBGBBBGB#&&###&&&&&&&&&&&&&&&&######&&#5GGGBBBBBGGB#&@&&&&B5PG####BGPYYY5PBBB#BBBPGG?JPGPJ!\n"
-                + "55PPPPPGGGGGGG5Y55PBBBGGBB##BBBGP5J?7JYYYPPYJPBB#B##BB#BBBBB###############BBBBBB###############BBBGGB##GGB5?!JGBB#&#####&&&&&&&&&&&&&&&&&&####B#BGPGGY5GGPPG#&&&&&&&&&&B5PB####BG5YY55GBBB#BBBGBGPPPPJJ\n"
-                + "PPPPPPPPPPGGGGGP555PPGBBGP5555PY?777?JJ?5PYY5GBBBB####BBBBBB####B###BBBBBBBBBB#BBBBBBBBBBBGGGGGBBBGG#55PBPY?YPG####BB##&&&&&&&&&&&&&&&&&&####BGP5PGGGGG5PG#&@&&&&&&&&&&&&#PPB####BGPPPPPGBB##B#BP5Y5GP5");
+                + "YY5555PPPGGGP5PG#GG##BG#######BBBBBB#########BBBBBGGBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&##BB#&&GGGB##&&&&&####G5G#PG####&&&&@@@&&&&&&&#&&&&@#YGGGG5P@&&##B#&&&#&######BGBB??5GPP5PPPPB#PP#&&#\n");
         menu();
 
         // FALTA COMPLETAR MENU (RESUMO E SAIR)
@@ -92,7 +83,7 @@ public class Jogo {
                     Thread.sleep(500);
                     System.out.println("------     HELOYSA    --------");
                     Thread.sleep(500);
-                    System.out.println("------     fellipe    --------");
+                    System.out.println("------     FELLIPE    --------");
                     Thread.sleep(500);
                     System.out.println("------      JOÃO      --------");
                     Thread.sleep(500);
@@ -114,7 +105,7 @@ public class Jogo {
                     Thread.sleep(500);
                     System.out.println("------     HELOYSA    --------");
                     Thread.sleep(500);
-                    System.out.println("------     fellipe    --------");
+                    System.out.println("------     FELLIPE    --------");
                     Thread.sleep(500);
                     System.out.println("------      JOÃO      --------");
                     Thread.sleep(500);
@@ -136,7 +127,7 @@ public class Jogo {
                     Thread.sleep(500);
                     System.out.println("------     HELOYSA    --------");
                     Thread.sleep(500);
-                    System.out.println("------     fellipe    --------");
+                    System.out.println("------     FELLIPE    --------");
                     Thread.sleep(500);
                     System.out.println("------      JOÃO      --------");
                     Thread.sleep(500);
@@ -446,8 +437,8 @@ public class Jogo {
         Thread.sleep(3000);
         DesafioZeus();
         System.out.println("Parabéns Theo, você conseguiu!!");
-        System.out.println("Você se esforçou e se dedicou para chegar até aqui");
-        System.out.println("----");
+        System.out.println("Theo se esforçou e se dedicou para chegar até aqui");
+        System.out.println("Theo finalmente está pronto para se tornar um grande Deus.");
         menu();
         timer.cancel();
     }
