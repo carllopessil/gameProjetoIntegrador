@@ -7,33 +7,33 @@ import java.util.Timer;
 public class Jogo {
 
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("GGBB#&&J????GY?J55PJYBBGBBBGGBBBBGGGGGBGGGGGGGGGGGGGGGGGGBBBBBB#####&&&&&&&&&&&&&&&&&&&&&@@&&&&&##########&&#####&&&&@@@@@@&&&&####BBGP55YJJ5GBB#G5PP555555YYY55PGGPGB#&&&&&&&&&&&#&&&&&&&&&&&&&&&&&&&&&\n" +
-"GBP5J??7?JJ?5G?J5PPYJGGGGGGGGGGGGBBBBBBBBBBBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&####&&#&###&&&&&@&@@@@@&&########BBGGGPP5PGBB##&BPJ5PPBBGGGPPPPPPB#&&&&#BGB#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n" +
-"G5JY7^:^7???5P?YPGP5PBBB#################&&&#####################&&&&&&&&&&&&&&&&&&&&&&@@&&&&&&&&###&#&&##&&&&&&&&@@@&#####&&&###BBBBBB##&B&&&&#B#PPPGGBB##&#####&&###GPPGBG#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n" +
-"5?J5PPYPPPGBBBBB#&&&&&&&&&&&&&&&&&&&#&#######################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&####&&&&&&&&&&&&@@@&###&&&&&###BB#####&@&GB####PB&GGGGBBB##&##&&##B#&&G5PB###&&&&&&&&&&&&&&&&&&&&&&&&&&&\n" +
-"???YPGGB##BB######&&&&&&&&&&&&&#########################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&&&&&&&#####&@&&&&&&&@@@&##&&&&&###BGP5GB#&&@@&PG###BPG##BBBBB#BBB##&&#B#&&&&&#GBB#&&&&&&&&&&&&&&&&&&&&&&&&&&##\n" +
-"!??7J5PGGB##BB######&&&#####################################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#&&#&&&&&&&&&@@@&B#&&&&##GP555GB#&&&@@&PYJ5#?:^5##@&#&B?5B##BB#B#&&&##&#######&&&&&#&&&&&&&&&&&&&#######\n" +
-"77777Y?YPGGGBBGGBBBBGB#########B######B5P##############&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&B#&&&&&&##&&&&&&&&@@&@&#B#&&&&#GP5PGB#&&&#&&@&GBBPY~~YGG#&BB&BP7?P&&&&&&&&PBPPPPB&#&&###&&&&#&&&&&&&&&&&&&&&####\n" +
-"77777JJ?Y55P5PBG5GGGG5BBBBB###########~ J########&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&GB&#&##&&&&#&&&&#&&&&@@&&BB&&@&#G5PGBB##&&&&&&&#B#&#BJJG&BPPG#&BGGB#&&&&&&&#P7?Y?JJYB#&&&&&##&&##&&&&&##&&&&&&&#&#&\n" +
-"7?777?Y7JYJYYY5B55GGGPB#############&5.7&##&#&&&&&&&&&&&&&&&&&&&&&&&########&&&&&&GG###&#&&&&&&&@&&&&&&@&@&&#G#&&&#BP55GBBBB##&&&&BBYP###!...5#GB?7YBGB&&#B#&&###J?!!~~!7#&&&&#&&&&&##&&&&#B&&&&&&&&&&&#\n" +
-"7777?7?J7!~JY5PBPG####&#GGG#&&##B###&BG#&##&&#B#######BB########BGGB####B#&&&&#G5BBB#GB######&&&@@#BBB#&@@&BG#&BBB###BBGPGGB#&&&#GGB####? 7Y.:P&&55#&###&BPPG#&&@@#GY55GYG&&##&#BBGB##&&&##&&&&&&&&&&&&&\n" +
-"77777?Y55Y5GPGBBBGB##P!^^~~^7BB^^B&&#!:J&####!:?#BBBBG^:P####B?^^~~^~5&7:J&BPYPBG#7~~~^^~~~~!#@&5!^~~~^^7PBG&&5:~&&&##G^:?GBB#BBB######Y.^G#7 ~BB#&&&B^^5!^^:P&&G7^~~~:^7J#&##J~~!!~~5@&#&&&&&&&&&&&&&&&\n" +
-"77??J5YPPGGBBGBB##B#Y.:Y###P^^? ~####^ ?#BBBB~ 7BBBB#G..5###B^ 7B##B?.?:.Y5JYPGB&##B#P..P####&&! ~G&&&#5:.?&&&5 :##BGP5~.~GGBB#&&&BB##P:.YB5Y^ 7&@&&@B..:JB#B#&Y.^5P#BY!.:5&&J ^G#GP5G&#&&&&&&&&&&&&&&&&\n" +
-"JJY55P5JYGGGBBBBBB#B: J&####P...5BBBB^ ?#BBB#~ 7#####G:.5###? ^#&&&&&~..~Y5PGGB#&&&&&G.:B&&&&@Y ^#@&&&&&Y.:B&&5 :GGP5Y57.^B&&########B~.?##PGP:.5###&G..5&&&&&B:.7YYY?JJ: 7B&Y:.!?YP#BG#&&&&&&&&&&&&&&&&\n" +
-"55555PP5J?5GGPGBBPP5..JPPBBBP:.7BBBBB^ ?#####~ ?#####G:.P&&&! !&&&#BP~.:5GGB#&&&&&&&&P.:B&&&&@? ~&&&&&&#Y..P#&Y ^555PG#J ^###&&&###BG7..~~~~~!:.:J5G&G..G&##&&5..7??7?JJ?JPBBBYJ?!^:~YGGB#&&&&&&&&&&&&&&\n" +
-"5YY55PP5P5??Y5YY5G5J^.!G5G#B?..Y####B^ ?&####~ !#&&&#Y..P@&&Y :PBPYJ7..^B#&&&#&&##&&&G..P@@&&&P..5@@@@&P~ !BB&5.:YGBB##~ ?###GGB#GPGJ.:5G5YPPGB! ^B#&G..P###&G5^ 7#B#&&&&###BGGG#&PJ..PGGBB#&&&&&&&&&&&&\n" +
-"YYY555555555J?JYYYBPJ^.^77J~^7.:JJP##?.:?JJ#&~..~JY?~~^ !Y5&#?.:~~!!:7~.?YY####&&&&&&&! ^JJY&&&Y^.!JYY7::7##BBG~.:?Y?7^:JB#&B555PG#G:.Y@BYPB#@@B^ !#&P. 5##&BPBP~.^7YYYJ7!BBY~~?JY?^.!BG5PP5G&&&###B&&&&\n" +
-"YY55555P5PPP5YJ55YBG5P5?!7?YB#P?7?G&##PJ??Y#&~ 7Y??JP&BY?75#BB5J?!7YG&BY77Y###&&&&&&&&#5J??P&&&&#PY?7775#&&#PY5GPJ?!7JP#@&&#BGG#&##Y~?&BGB#BGGPG57?#&GJJB##BPBGGBYY?77?JJG&G5J??7!??5BBG5YYYYG&&#GGP#&&&\n" +
-"Y5555555PP55PPYY5PB5GBBGG######&&&&###&&&&&&#~ ?&&&&&#&##BBBBB####&&#########&&&&&&&&&&&&&&&&&&&&@@&#GG#&&#Y5GPGBBB#B&@&#BGB#&&###&#GG&PJP#&5?JYYJY#&#&@&&B5GBGB5G&&BB##&&&####&#BBBPBPPB55YY5G&&BGPB##&\n" +
-"YY55555PPPPPG5Y5PBPPBBGG#####################7:J&####BBGGGBBB#########B########&&&&&&&&&&&##&&&&&&&#BPG#&&#JJPGGGBBJJG#B##&&###&&&&@@&###&&@BPB&&#&&&&&&@#5GGGB5P#&#B###&&&&##BB###BGGBBBBY5YY5B&#PG####\n" +
-"YYY555555PGGP5PPBGPBBBG##############BB#######B####BGGGBBBBB##################&&&&&#&&&&&&#&&&&&&&&#BGB#&&#P5PGB#&#GG##&&#B#&B#&&&&&##&&&&&&&@@&&&&&&&&@#YGGGG5P&&#BB##&&###&##BBBB#BG5PGBPY5YYP#&PG#&##\n" +
-"YY5555PPPGGGP5PG#GG##BG#######BBBBBB#########BBBBBGGBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&##BB#&&GGGB##&&&&&####G5G#PG####&&&&@@@&&&&&&&#&&&&@#YGGGG5P@&&##B#&&&#&######BGBB??5GPP5PPPPB#PP#&&#\n" +
-"YY5555PPPGGG5PPG#GGBBBPG#BBBBBBBB##########BGY5YYGBGGBBB##B###BB#########&#&###&&##&&&&&&&&&&&&&&&##BBB###GGBPG&&&##BB##&####&&&&#&&&&@@&&&&&&&&##&&&&#YPGGB5P@&&##BB#############BGGPPPGBGPPPPGB#PP#&&&\n" +
-"5YY5P5PPPPGG5PPG#GPGGGG5PGGGPPGB###B##B5?5PGP?JYBBGBB##BBB###BB############&&#&&&##&&&&&&&&&&&BGGGGB#GG#BPGBG5PB#BBB#####&&&&&&&&&&&&&&&&&&&&&###&&&@#YGGGBP5&GYB#B#&BBB###########BGB#GGGGBGGP55PPPB&&&\n" +
-"5YY5P55PPGGGY555PB5YPGGGGGB##G5Y5PGBBP57JYP55PP5B###B##BB###BBB############&&&&&#&&&&&#&&&&&&&&#####&BGGBGGPGBGB#####BB#&&&##&&&&&&&&&&&&&&&#####&&&#YGBGBBG##P55B&&&&GPGB#####BGGGGGGGBGBGGGGGGP?7Y5PBB\n" +
-"5Y5PPPPPPGGGPYJYY5GGPGB##BBBB##P55PP5J?Y55P5JPBBB##BB##BB################&&&###############&&&&&&&&&##B#&##&BPBGBBBGB#&&###&&&&&&&&&&&&&&&&######&&#5GGGBBBBBGGB#&@&&&&B5PG####BGPYYY5PBBB#BBBPGG?JPGPJ!\n" +
-"55PPPPPGGGGGGG5Y55PBBBGGBB##BBBGP5J?7JYYYPPYJPBB#B##BB#BBBBB###############BBBBBB###############BBBGGB##GGB5?!JGBB#&#####&&&&&&&&&&&&&&&&&&####B#BGPGGY5GGPPG#&&&&&&&&&&B5PB####BG5YY55GBBB#BBBGBGPPPPJJ\n" +
-"PPPPPPPPPPGGGGGP555PPGBBGP5555PY?777?JJ?5PYY5GBBBB####BBBBBB####B###BBBBBBBBBB#BBBBBBBBBBBGGGGGBBBGG#55PBPY?YPG####BB##&&&&&&&&&&&&&&&&&&####BGP5PGGGGG5PG#&@&&&&&&&&&&&&#PPB####BGPPPPPGBB##B#BP5Y5GP5");
+        System.out.println("GGBB#&&J????GY?J55PJYBBGBBBGGBBBBGGGGGBGGGGGGGGGGGGGGGGGGBBBBBB#####&&&&&&&&&&&&&&&&&&&&&@@&&&&&##########&&#####&&&&@@@@@@&&&&####BBGP55YJJ5GBB#G5PP555555YYY55PGGPGB#&&&&&&&&&&&#&&&&&&&&&&&&&&&&&&&&&\n"
+                + "GBP5J??7?JJ?5G?J5PPYJGGGGGGGGGGGGBBBBBBBBBBBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&####&&#&###&&&&&@&@@@@@&&########BBGGGPP5PGBB##&BPJ5PPBBGGGPPPPPPB#&&&&#BGB#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n"
+                + "G5JY7^:^7???5P?YPGP5PBBB#################&&&#####################&&&&&&&&&&&&&&&&&&&&&&@@&&&&&&&&###&#&&##&&&&&&&&@@@&#####&&&###BBBBBB##&B&&&&#B#PPPGGBB##&#####&&###GPPGBG#&&&&&&&@&&&&&&&&&&&&&&&&&&&\n"
+                + "5?J5PPYPPPGBBBBB#&&&&&&&&&&&&&&&&&&&#&#######################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&####&&&&&&&&&&&&@@@&###&&&&&###BB#####&@&GB####PB&GGGGBBB##&##&&##B#&&G5PB###&&&&&&&&&&&&&&&&&&&&&&&&&&&\n"
+                + "???YPGGB##BB######&&&&&&&&&&&&&#########################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&@&&&&&&&&&&#####&@&&&&&&&@@@&##&&&&&###BGP5GB#&&@@&PG###BPG##BBBBB#BBB##&&#B#&&&&&#GBB#&&&&&&&&&&&&&&&&&&&&&&&&&&##\n"
+                + "!??7J5PGGB##BB######&&&#####################################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#&&#&&&&&&&&&@@@&B#&&&&##GP555GB#&&&@@&PYJ5#?:^5##@&#&B?5B##BB#B#&&&##&#######&&&&&#&&&&&&&&&&&&&#######\n"
+                + "77777Y?YPGGGBBGGBBBBGB#########B######B5P##############&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&B#&&&&&&##&&&&&&&&@@&@&#B#&&&&#GP5PGB#&&&#&&@&GBBPY~~YGG#&BB&BP7?P&&&&&&&&PBPPPPB&#&&###&&&&#&&&&&&&&&&&&&&&####\n"
+                + "77777JJ?Y55P5PBG5GGGG5BBBBB###########~ J########&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&GB&#&##&&&&#&&&&#&&&&@@&&BB&&@&#G5PGBB##&&&&&&&#B#&#BJJG&BPPG#&BGGB#&&&&&&&#P7?Y?JJYB#&&&&&##&&##&&&&&##&&&&&&&#&#&\n"
+                + "7?777?Y7JYJYYY5B55GGGPB#############&5.7&##&#&&&&&&&&&&&&&&&&&&&&&&&########&&&&&&GG###&#&&&&&&&@&&&&&&@&@&&#G#&&&#BP55GBBBB##&&&&BBYP###!...5#GB?7YBGB&&#B#&&###J?!!~~!7#&&&&#&&&&&##&&&&#B&&&&&&&&&&&#\n"
+                + "7777?7?J7!~JY5PBPG####&#GGG#&&##B###&BG#&##&&#B#######BB########BGGB####B#&&&&#G5BBB#GB######&&&@@#BBB#&@@&BG#&BBB###BBGPGGB#&&&#GGB####? 7Y.:P&&55#&###&BPPG#&&@@#GY55GYG&&##&#BBGB##&&&##&&&&&&&&&&&&&\n"
+                + "77777?Y55Y5GPGBBBGB##P!^^~~^7BB^^B&&#!:J&####!:?#BBBBG^:P####B?^^~~^~5&7:J&BPYPBG#7~~~^^~~~~!#@&5!^~~~^^7PBG&&5:~&&&##G^:?GBB#BBB######Y.^G#7 ~BB#&&&B^^5!^^:P&&G7^~~~:^7J#&##J~~!!~~5@&#&&&&&&&&&&&&&&&\n"
+                + "77??J5YPPGGBBGBB##B#Y.:Y###P^^? ~####^ ?#BBBB~ 7BBBB#G..5###B^ 7B##B?.?:.Y5JYPGB&##B#P..P####&&! ~G&&&#5:.?&&&5 :##BGP5~.~GGBB#&&&BB##P:.YB5Y^ 7&@&&@B..:JB#B#&Y.^5P#BY!.:5&&J ^G#GP5G&#&&&&&&&&&&&&&&&&\n"
+                + "JJY55P5JYGGGBBBBBB#B: J&####P...5BBBB^ ?#BBB#~ 7#####G:.5###? ^#&&&&&~..~Y5PGGB#&&&&&G.:B&&&&@Y ^#@&&&&&Y.:B&&5 :GGP5Y57.^B&&########B~.?##PGP:.5###&G..5&&&&&B:.7YYY?JJ: 7B&Y:.!?YP#BG#&&&&&&&&&&&&&&&&\n"
+                + "55555PP5J?5GGPGBBPP5..JPPBBBP:.7BBBBB^ ?#####~ ?#####G:.P&&&! !&&&#BP~.:5GGB#&&&&&&&&P.:B&&&&@? ~&&&&&&#Y..P#&Y ^555PG#J ^###&&&###BG7..~~~~~!:.:J5G&G..G&##&&5..7??7?JJ?JPBBBYJ?!^:~YGGB#&&&&&&&&&&&&&&\n"
+                + "5YY55PP5P5??Y5YY5G5J^.!G5G#B?..Y####B^ ?&####~ !#&&&#Y..P@&&Y :PBPYJ7..^B#&&&#&&##&&&G..P@@&&&P..5@@@@&P~ !BB&5.:YGBB##~ ?###GGB#GPGJ.:5G5YPPGB! ^B#&G..P###&G5^ 7#B#&&&&###BGGG#&PJ..PGGBB#&&&&&&&&&&&&\n"
+                + "YYY555555555J?JYYYBPJ^.^77J~^7.:JJP##?.:?JJ#&~..~JY?~~^ !Y5&#?.:~~!!:7~.?YY####&&&&&&&! ^JJY&&&Y^.!JYY7::7##BBG~.:?Y?7^:JB#&B555PG#G:.Y@BYPB#@@B^ !#&P. 5##&BPBP~.^7YYYJ7!BBY~~?JY?^.!BG5PP5G&&&###B&&&&\n"
+                + "YY55555P5PPP5YJ55YBG5P5?!7?YB#P?7?G&##PJ??Y#&~ 7Y??JP&BY?75#BB5J?!7YG&BY77Y###&&&&&&&&#5J??P&&&&#PY?7775#&&#PY5GPJ?!7JP#@&&#BGG#&##Y~?&BGB#BGGPG57?#&GJJB##BPBGGBYY?77?JJG&G5J??7!??5BBG5YYYYG&&#GGP#&&&\n"
+                + "Y5555555PP55PPYY5PB5GBBGG######&&&&###&&&&&&#~ ?&&&&&#&##BBBBB####&&#########&&&&&&&&&&&&&&&&&&&&@@&#GG#&&#Y5GPGBBB#B&@&#BGB#&&###&#GG&PJP#&5?JYYJY#&#&@&&B5GBGB5G&&BB##&&&####&#BBBPBPPB55YY5G&&BGPB##&\n"
+                + "YY55555PPPPPG5Y5PBPPBBGG#####################7:J&####BBGGGBBB#########B########&&&&&&&&&&&##&&&&&&&#BPG#&&#JJPGGGBBJJG#B##&&###&&&&@@&###&&@BPB&&#&&&&&&@#5GGGB5P#&#B###&&&&##BB###BGGBBBBY5YY5B&#PG####\n"
+                + "YYY555555PGGP5PPBGPBBBG##############BB#######B####BGGGBBBBB##################&&&&&#&&&&&&#&&&&&&&&#BGB#&&#P5PGB#&#GG##&&#B#&B#&&&&&##&&&&&&&@@&&&&&&&&@#YGGGG5P&&#BB##&&###&##BBBB#BG5PGBPY5YYP#&PG#&##\n"
+                + "YY5555PPPGGGP5PG#GG##BG#######BBBBBB#########BBBBBGGBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&##BB#&&GGGB##&&&&&####G5G#PG####&&&&@@@&&&&&&&#&&&&@#YGGGG5P@&&##B#&&&#&######BGBB??5GPP5PPPPB#PP#&&#\n"
+                + "YY5555PPPGGG5PPG#GGBBBPG#BBBBBBBB##########BGY5YYGBGGBBB##B###BB#########&#&###&&##&&&&&&&&&&&&&&&##BBB###GGBPG&&&##BB##&####&&&&#&&&&@@&&&&&&&&##&&&&#YPGGB5P@&&##BB#############BGGPPPGBGPPPPGB#PP#&&&\n"
+                + "5YY5P5PPPPGG5PPG#GPGGGG5PGGGPPGB###B##B5?5PGP?JYBBGBB##BBB###BB############&&#&&&##&&&&&&&&&&&BGGGGB#GG#BPGBG5PB#BBB#####&&&&&&&&&&&&&&&&&&&&&###&&&@#YGGGBP5&GYB#B#&BBB###########BGB#GGGGBGGP55PPPB&&&\n"
+                + "5YY5P55PPGGGY555PB5YPGGGGGB##G5Y5PGBBP57JYP55PP5B###B##BB###BBB############&&&&&#&&&&&#&&&&&&&&#####&BGGBGGPGBGB#####BB#&&&##&&&&&&&&&&&&&&&#####&&&#YGBGBBG##P55B&&&&GPGB#####BGGGGGGGBGBGGGGGGP?7Y5PBB\n"
+                + "5Y5PPPPPPGGGPYJYY5GGPGB##BBBB##P55PP5J?Y55P5JPBBB##BB##BB################&&&###############&&&&&&&&&##B#&##&BPBGBBBGB#&&###&&&&&&&&&&&&&&&&######&&#5GGGBBBBBGGB#&@&&&&B5PG####BGPYYY5PBBB#BBBPGG?JPGPJ!\n"
+                + "55PPPPPGGGGGGG5Y55PBBBGGBB##BBBGP5J?7JYYYPPYJPBB#B##BB#BBBBB###############BBBBBB###############BBBGGB##GGB5?!JGBB#&#####&&&&&&&&&&&&&&&&&&####B#BGPGGY5GGPPG#&&&&&&&&&&B5PB####BG5YY55GBBB#BBBGBGPPPPJJ\n"
+                + "PPPPPPPPPPGGGGGP555PPGBBGP5555PY?777?JJ?5PYY5GBBBB####BBBBBB####B###BBBBBBBBBB#BBBBBBBBBBBGGGGGBBBGG#55PBPY?YPG####BB##&&&&&&&&&&&&&&&&&&####BGP5PGGGGG5PG#&@&&&&&&&&&&&&#PPB####BGPPPPPGBB##B#BP5Y5GP5");
         menu();
 
         // FALTA COMPLETAR MENU (RESUMO E SAIR)
@@ -42,7 +42,6 @@ public class Jogo {
         // COLOCAR PARTE DA LETRA GRANDE NO COMEÇO
         // FELIPE CONFIRMAR SE A PARTE DO JOGO ESTÁ RODANDO
         // JOÃO RODAR TODO O JOGO E REVISAR A HISTORIA
-
     }
 
     static void menu() throws InterruptedException {
@@ -58,23 +57,23 @@ public class Jogo {
             System.out.println("\nEscolha sua opção:");
             entrada = input.nextInt();
 
-            switch (entrada){
+            switch (entrada) {
                 case 1:;
-                returnText();
-            Thread.sleep(3000);
-            timer.cancel();
-            menu();
-                case 2:;
-                int enter;
-            System.out.println("---RESUMO---");
-            do {
-
-                System.out.println("DIGITE 1 PARA VOLTAR AO MENU");
-                enter = input.nextInt();
-                if (enter == 1) {
+                    returnText();
+                    Thread.sleep(3000);
+                    timer.cancel();
                     menu();
-                }
-            } while (enter != 1);
+                case 2:;
+                    int enter;
+                    System.out.println("---RESUMO---");
+                    do {
+
+                        System.out.println("DIGITE 1 PARA VOLTAR AO MENU");
+                        enter = input.nextInt();
+                        if (enter == 1) {
+                            menu();
+                        }
+                    } while (enter != 1);
 
                 case 3:
                     System.out.println("------  sangue de ares ------");
@@ -151,26 +150,25 @@ public class Jogo {
                     Thread.sleep(500);
                     System.out.println("------  sangue de ares ------");
                     Thread.sleep(500);
-                    System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P             7@@@@@^    B@@@@@!      Y@@@@@?      J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    ^55555555G@@@@@^    B@@@@@!      ^@@@@&.      J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   :.  P@@@Y  ..   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !~  ~@@@^  7~   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    ~#BBBBB&@@@@@@@^    B@@@@@!   7P   B@P   G^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P           5@@@@@@@^    B@@@@@!   !@:  7@~  ~@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    .::::::P@@@@@@@^    B@@@@@!   !@J  .5   5@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    !@&&&&&@@@@@@@@^    B@@@@@!   !@#.  .  :&@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@!     J@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@G    .#@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@@^   !@@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@@5   G@@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@G.::.7@@@@@@@@@@@@@@~.:::B@@@@@?.:.7@@@&^.~@@@@~.:.Y@@@@@@@@@@@@@@@@@@@@@@@@\n" +
-"@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&@@@@@@@@@@@@@@&&&&&@@@@@@&&&&&@@@@&&@@@@@&&&&@@@@@@@@@@@@@@@@@@@@@@@@@\n");
-                    break
-                    ;
-                
+                    System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P             7@@@@@^    B@@@@@!      Y@@@@@?      J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    ^55555555G@@@@@^    B@@@@@!      ^@@@@&.      J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   :.  P@@@Y  ..   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !~  ~@@@^  7~   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    ~#BBBBB&@@@@@@@^    B@@@@@!   7P   B@P   G^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P           5@@@@@@@^    B@@@@@!   !@:  7@~  ~@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    .::::::P@@@@@@@^    B@@@@@!   !@J  .5   5@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    !@&&&&&@@@@@@@@^    B@@@@@!   !@#.  .  :&@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@!     J@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@G    .#@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@@^   !@@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@P    !@@@@@@@@@@@@@@^    B@@@@@!   !@@@5   G@@@^   J@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@G.::.7@@@@@@@@@@@@@@~.:::B@@@@@?.:.7@@@&^.~@@@@~.:.Y@@@@@@@@@@@@@@@@@@@@@@@@\n"
+                            + "@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&@@@@@@@@@@@@@@&&&&&@@@@@@&&&&&@@@@&&@@@@@&&&&@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+                    break;
+
             }
-           } while (entrada !=3);
+        } while (entrada != 3);
     }
 
     static int ataqueTheo() {
@@ -414,19 +412,19 @@ public class Jogo {
         Thread.sleep(3000);
         System.out.println(
                 "nessa batalha contra os Titãs, Theo acaba perdendo seu pai, com tudo, \n os Deuses"
-                        + " do Olimpo ficam furiosos com Zeus, para que Zeus\n não levasse toda a culpa, ele acaba tendo uma solução.");
+                + " do Olimpo ficam furiosos com Zeus, para que Zeus\n não levasse toda a culpa, ele acaba tendo uma solução.");
         System.out.println("Onde ele resolve colocar Theo para assumir o lugar de seu pai.\n");
         Thread.sleep(3000);
 
         System.out.println(
                 "Theo ainda era criança e precisava de treinamento para \nassumir esse grande posto,então Zeus "
-                        + "resolve que Ártemis deverá ");
+                + "resolve que Ártemis deverá ");
         System.out.println("cuidar de Theo e dar todos os ensinamentos necessários.\n");
         Thread.sleep(3000);
         System.out.println("Só que Ártemis não daria conta de dar todos os ensinamentos para Theo.");
         System.out.println(
                 "Athena vendo toda aquela situação ela resolve ajudar, dando ensinamentos\n sobre estratégias e alguns "
-                        + "ensinamentos sobre Guerra.\n");
+                + "ensinamentos sobre Guerra.\n");
         Thread.sleep(3000);
         CarloseGu();
         System.out.println("Theo acaba passando pelo treinamento de Athena obtendo sabedoria e conhecimento\n"
@@ -471,7 +469,7 @@ public class Jogo {
 
         System.out.println(
                 "Iniciando em um corredor totalmente escuro, com ruídos de armas recarregando, \ne fuzis disparando, como se fossem"
-                        + "disparos de testes e avisos\n");
+                + "disparos de testes e avisos\n");
         Thread.sleep(3000);
 
         do {
@@ -499,8 +497,8 @@ public class Jogo {
                 timer.cancel();
 
                 int diaQ1,
-                        mesQ1,
-                        anoQ1;
+                 mesQ1,
+                 anoQ1;
                 do {
                     System.out.print("dia:");
                     diaQ1 = input.nextInt();
@@ -544,8 +542,8 @@ public class Jogo {
 
                 String onde;
                 int diaQ2,
-                        mesQ2,
-                        anoQ2;
+                 mesQ2,
+                 anoQ2;
                 do {
                     System.out.println("onde você está?");
                     onde = input.next();
@@ -602,9 +600,9 @@ public class Jogo {
                 do {
                     System.out.println(
                             " 1) Vladmir Putin\n "
-                                    + "2) Adolf Hitler\n "
-                                    + "3) Josef Stalin\n"
-                                    + " 4) Fidel Castro");
+                            + "2) Adolf Hitler\n "
+                            + "3) Josef Stalin\n"
+                            + " 4) Fidel Castro");
                     System.out.println("insira o número que corresponde à alternativa correta");
                     resposta = input.nextInt();
                 } while (resposta != 1);
@@ -614,10 +612,10 @@ public class Jogo {
                 Thread.sleep(3000);
                 System.out.println(
                         "Durante sua fuga desesperada Theo acaba se perdendo, até que começam a tocar sirenes alerta de bomba\n"
-                                + "Dessa mesma sirene começa a sair uma risada diabólica\n "
-                                + "mas logo essa risada é ofuscada pelo som mais alto e ensurdecedor de todos,\n"
-                                + "e junto desse som uma nuvem se forma no horizonte com a forma de um cogumelo.\n"
-                                + "Enquanto isso Theo escuta uma voz macabra que lembrava muito a de seu pai, lhe perguntanto se sabia onde estava ");
+                        + "Dessa mesma sirene começa a sair uma risada diabólica\n "
+                        + "mas logo essa risada é ofuscada pelo som mais alto e ensurdecedor de todos,\n"
+                        + "e junto desse som uma nuvem se forma no horizonte com a forma de um cogumelo.\n"
+                        + "Enquanto isso Theo escuta uma voz macabra que lembrava muito a de seu pai, lhe perguntanto se sabia onde estava ");
                 Thread.sleep(3000);
                 int resposta2;
                 System.out.println("\npara prosseguir responda onde você está");
@@ -625,9 +623,9 @@ public class Jogo {
                 do {
                     System.out.println(
                             " 1) Hiroshima quando: 06/09/1950\n "
-                                    + "2) Nagazaki quando: 03/07/1943\n "
-                                    + "3) Hiroshima quando: 06/08/1945\n"
-                                    + " 4) Japão quando: 02/07/1942");
+                            + "2) Nagazaki quando: 03/07/1943\n "
+                            + "3) Hiroshima quando: 06/08/1945\n"
+                            + " 4) Japão quando: 02/07/1942");
                     System.out.println("insira o número que corresponde à alternativa correta");
                     resposta2 = input.nextInt();
                 } while (resposta2 != 3);
@@ -725,7 +723,7 @@ public class Jogo {
         if (FHesc1.equalsIgnoreCase("norte") || FHesc1.equalsIgnoreCase("n") || FHcontinua == 1) {
             System.out.println(
                     "\nSe aproximando do rio, Theo se impressiona com o quanto aparenta ser muito fundo,\n e "
-                            + "consegue observar uma ponte, um tanto distante que concede para o outro lado do rio");
+                    + "consegue observar uma ponte, um tanto distante que concede para o outro lado do rio");
 
             System.out
                     .println("No caminho até a ponte, encontra-se um índio sentado como se tivesse a sua espera...\n");
@@ -1118,4 +1116,42 @@ public class Jogo {
             }
         }
     }
+
+    static void DesafioZeus() {
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("____________Desafio de ZEUS____________");
+        System.out.println("Neste desafio lutara contra 3 criaturas!");
+        System.out.println("Regras da batalha se voce derrotar uma critaura poderar seguir em frete caso contrario deve lutar novamente!");
+        System.out.println("Boa sorte ! ");
+
+        int a = 1;
+        int b = 1;
+        int c = 1;
+
+        while (a == 1) {
+
+            fightMinotauro();
+
+            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
+            a = leitor.nextInt();
+        }
+        while (b == 1) {
+
+            fightEquidna();
+
+            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
+            b = leitor.nextInt();
+        }
+
+        while (c == 1) {
+
+            fightGrifo();
+
+            System.out.println(" Fim ! (1) Para Lutar novamente (2) Para seguir  ");
+            c = leitor.nextInt();
+
+        }
+
+    }
+
 }
