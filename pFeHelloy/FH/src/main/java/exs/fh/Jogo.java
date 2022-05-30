@@ -56,13 +56,25 @@ public class Jogo {
                     menu();
                 case 2:;
                     int enter;
-                    System.out.println("---RESUMO---");
+                    System.out.println("---RESUMO---"
+                            + "Esse jogo se passa na mitologia grega onde dois Deuses se apaixonam e tem um filho\n" +
+"chamado Theo que é um semideus que precisa assumir o lugar de seu pai que morreu na\n" +
+"guerra contra os titãs.\n" +
+"Durante sua jornada, Theo passa por treinamentos para se tornar um Deus onde ele acaba\n" +
+"recebendo ensinamentos de sua mãe e de Athena para ser um Deus completamente\n" +
+"diferente de seu pai.\n" +
+"No final dos seus treinamentos Theo precisa receber a aprovação de Zeus onde ele passar\n" +
+"desafio final onde ele terá que passar por três mostro que representa os três principais\n" +
+"Deus do olimpo que são Hades, Poseidon e Zeus se Theo conseguir passar pelo desafio\n" +
+"final ele assumirá o lugar de seu pai e se tornará o novo Deus da guerra");
                     do {
 
                         System.out.println("DIGITE 1 PARA VOLTAR AO MENU");
                         enter = input.nextInt();
                         if (enter == 1) {
                             menu();
+                        }else{
+                            System.out.println("opção invalida!");
                         }
                     } while (enter != 1);
 
@@ -632,6 +644,7 @@ public class Jogo {
                 break;
         }
 
+        System.out.println("Theo recebeu por passar por esse aprendizado recebeu uma aljava de terra.");
     }
 
     static void FH() throws InterruptedException {
