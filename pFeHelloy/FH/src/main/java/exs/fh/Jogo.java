@@ -26,7 +26,6 @@ public class Jogo {
                 + "YYY555555PGGP5PPBGPBBBG##############BB#######B####BGGGBBBBB##################&&&&&#&&&&&&#&&&&&&&&#BGB#&&#P5PGB#&#GG##&&#B#&B#&&&&&##&&&&&&&@@&&&&&&&&@#YGGGG5P&&#BB##&&###&##BBBB#BG5PGBPY5YYP#&PG#&##\n"
                 + "YY5555PPPGGGP5PG#GG##BG#######BBBBBB#########BBBBBGGBBBBBB##################&&&&&&&&&&&&&&&&&&&&&&&##BB#&&GGGB##&&&&&####G5G#PG####&&&&@@@&&&&&&&#&&&&@#YGGGG5P@&&##B#&&&#&######BGBB??5GPP5PPPPB#PP#&&#\n");
         menu();
-
         // FALTA COMPLETAR MENU (RESUMO E SAIR)
         // ARRUMAR HISTORIA DA PARTE DO CARLOS E GU
         // ARRUMAR FINAL
@@ -53,8 +52,8 @@ public class Jogo {
                     returnText();
                     Thread.sleep(3000);
                     timer.cancel();
-                    menu();
-                case 2:;
+                    break;
+                case 2:
                     int enter;
                     System.out.println("---RESUMO---"
                             + "Esse jogo se passa na mitologia grega onde dois Deuses se apaixonam e tem um filho\n" +
@@ -77,6 +76,7 @@ public class Jogo {
                             System.out.println("opção invalida!");
                         }
                     } while (enter != 1);
+                    break;
 
                 case 3:
                     System.out.println("------  sangue de ares ------");
@@ -451,7 +451,6 @@ public class Jogo {
         System.out.println("Parabéns Theo, você conseguiu!!");
         System.out.println("Theo se esforçou e se dedicou para chegar até aqui");
         System.out.println("Theo finalmente está pronto para se tornar um grande Deus.");
-        menu();
         timer.cancel();
     }
 
